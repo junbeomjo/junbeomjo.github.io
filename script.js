@@ -2,6 +2,8 @@ const translations = {
   en: {
     pageTitleHome: "CReCS Lab | Climate-Resilient Coastal Systems",
     pageTitlePeople: "People | CReCS Lab",
+    pageTitleOpportunities: "Opportunities | CReCS Lab",
+    pageTitleContact: "Contact | CReCS Lab",
     navHome: "Home",
     navResearch: "Research",
     navPeople: "People",
@@ -137,6 +139,38 @@ const translations = {
     fundingDescription:
       "Funding opportunities may be available depending on the position and project. Details will be discussed during the interview.",
     applicationCta: "Send an inquiry",
+    opportunitiesDetailKicker: "Opportunities",
+    opportunitiesDetailTitle: "Research opportunities at CReCS",
+    opportunitiesDetailIntro:
+      "CReCS welcomes students who want to understand coastal hazards and develop science-based approaches to climate adaptation and resilience.",
+    opportunitiesPathwaysHeading: "Open pathways",
+    opportunitiesGraduateDetail:
+      "Prospective master's, doctoral, and integrated MS–PhD students are welcome to inquire about research in coastal engineering, compound flooding, and climate risk.",
+    opportunitiesUndergraduateDetail:
+      "Undergraduate students may join through research experience, thesis preparation, or participation in an ongoing project.",
+    fitLabel: "Research fit",
+    fitTitle: "Who may be a good fit",
+    fitDescription:
+      "We welcome students from civil, coastal, ocean, hydraulic, and environmental engineering, as well as related computational and data fields. Curiosity, initiative, and a willingness to learn across disciplines matter most.",
+    fitTag1: "Coastal Engineering",
+    fitTag2: "Hydraulic Engineering",
+    fitTag3: "Climate Adaptation",
+    fitTag4: "Numerical Modeling",
+    fitTag5: "Hydraulic Experiments",
+    fitTag6: "Risk & Data Analysis",
+    inquiryProcessLabel: "Application process",
+    inquiryProcessTitle: "How to inquire",
+    inquiryStep1Title: "Prepare your materials",
+    inquiryStep1Description: "Prepare a CV, academic transcript, and a brief note about your research interests.",
+    inquiryStep2Title: "Send an email",
+    inquiryStep2Description: "Introduce yourself, the program or opportunity you are considering, and your preferred start period.",
+    inquiryStep3Title: "Discuss the research fit",
+    inquiryStep3Description: "Selected applicants will be invited to discuss interests, possible topics, and next steps.",
+    admissionsLabel: "Admissions & funding",
+    admissionsDescription:
+      "Admission follows Jeonbuk National University requirements. Funding opportunities may be available depending on the position and project, and details will be discussed individually.",
+    opportunitiesEmailCta: "Send a prospective student inquiry",
+    opportunitiesContactNote: "Domestic and international inquiries are welcome.",
     contactSectionKicker: "Contact",
     contactSectionTitle: "Connect with CReCS",
     contactSectionIntro:
@@ -155,6 +189,28 @@ const translations = {
     contactAddressValue:
       "567 Baekje-daero, Deokjin-gu, Jeonju-si, Jeonbuk State 54896, Republic of Korea",
     contactMapCta: "View on Google Maps",
+    contactDetailKicker: "Contact",
+    contactDetailTitle: "Contact CReCS",
+    contactDetailIntro:
+      "Get in touch about research collaboration, student opportunities, or a visit to the CReCS Lab.",
+    contactDetailsHeading: "Contact details",
+    inquiryRoutesLabel: "Get in touch",
+    inquiryRoutesTitle: "Choose the right contact route",
+    collaborationRouteTitle: "Research collaboration",
+    collaborationRouteDescription:
+      "For joint research, academic exchange, seminars, and project discussions, please contact us by email.",
+    prospectiveRouteTitle: "Prospective students",
+    prospectiveRouteDescription:
+      "For graduate study or undergraduate research, review the Opportunities page before sending your materials.",
+    viewOpportunitiesCta: "View Opportunities",
+    advisingLabel: "For current students",
+    advisingTitle: "Student advising",
+    advisingDescription:
+      "Office hours are being scheduled. Until online booking opens, current students\nmay request an appointment by email.",
+    advisingStatus: "Online booking coming soon",
+    advisingEmailCta: "Request an appointment by email",
+    visitLabel: "Before your visit",
+    visitDescription: "Please confirm an appointment\nbefore visiting Room 139,\nEngineering Building 1.",
     footerTagline: "Climate-Resilient Coastal Systems",
     footerNavigate: "Navigate",
     footerConnect: "Connect",
@@ -165,6 +221,8 @@ const translations = {
   ko: {
     pageTitleHome: "CReCS 연구실 | 기후회복력 연안시스템",
     pageTitlePeople: "연구 구성원 | CReCS 연구실",
+    pageTitleOpportunities: "지원 안내 | CReCS 연구실",
+    pageTitleContact: "연락처 | CReCS 연구실",
     navHome: "홈",
     navResearch: "연구",
     navPeople: "구성원",
@@ -300,6 +358,38 @@ const translations = {
     fundingDescription:
       "과정과 참여 연구과제에 따라 지원 가능 여부가 달라질 수 있으며, 자세한 내용은 면담을 통해 안내합니다.",
     applicationCta: "이메일로 문의하기",
+    opportunitiesDetailKicker: "지원 안내",
+    opportunitiesDetailTitle: "CReCS 연구 참여 안내",
+    opportunitiesDetailIntro:
+      "연안재해를 이해하고 기후적응과 회복력을 위한 과학적 해법을 함께 만들어갈 학생을 기다립니다.",
+    opportunitiesPathwaysHeading: "모집 분야",
+    opportunitiesGraduateDetail:
+      "해안공학, 복합침수 및 기후위험 연구에 관심 있는 석사과정, 박사과정 및 석박사통합과정 지원 예정자의 문의를 환영합니다.",
+    opportunitiesUndergraduateDetail:
+      "학부생은 연구 경험, 졸업논문 준비 또는 진행 중인 연구과제 참여를 통해 연구실 활동을 시작할 수 있습니다.",
+    fitLabel: "연구 적합성",
+    fitTitle: "이런 학생과 잘 맞습니다",
+    fitDescription:
+      "토목·해안·해양·수공·환경공학 및 계산과학·데이터 분야의 학생을 환영합니다.\n전공보다 새로운 문제에 대한 호기심과 주도성, 여러 분야를 함께 배우려는 태도를 중요하게 생각합니다.",
+    fitTag1: "해안공학",
+    fitTag2: "수공학",
+    fitTag3: "기후적응",
+    fitTag4: "수치모델링",
+    fitTag5: "수리실험",
+    fitTag6: "위험·데이터 분석",
+    inquiryProcessLabel: "지원 절차",
+    inquiryProcessTitle: "문의 방법",
+    inquiryStep1Title: "자료 준비",
+    inquiryStep1Description: "이력서, 성적증명서와 관심 연구 분야를 설명한\n짧은 글을 준비해 주세요.",
+    inquiryStep2Title: "이메일 문의",
+    inquiryStep2Description: "간단한 자기소개와 희망 과정 또는 활동,\n시작 희망 시기를 함께 알려 주세요.",
+    inquiryStep3Title: "연구 적합성 면담",
+    inquiryStep3Description: "관심 분야와 가능한 연구 주제,\n이후 절차를 면담을 통해 논의합니다.",
+    admissionsLabel: "입학 및 재정 지원",
+    admissionsDescription:
+      "입학은 전북대학교의 관련 규정과 절차를 따릅니다. 재정 지원은 과정과 참여 연구과제에 따라 달라질 수 있으며 개별 면담에서 안내합니다.",
+    opportunitiesEmailCta: "학생 지원 문의 보내기",
+    opportunitiesContactNote: "국내외 학생의 문의를 모두 환영합니다.",
     contactSectionKicker: "연락처",
     contactSectionTitle: "CReCS와 연결하기",
     contactSectionIntro:
@@ -317,6 +407,28 @@ const translations = {
     contactAddressLabel: "주소",
     contactAddressValue: "54896 전북특별자치도 전주시 덕진구 백제대로 567",
     contactMapCta: "Google 지도에서 보기",
+    contactDetailKicker: "연락처",
+    contactDetailTitle: "CReCS에 연락하기",
+    contactDetailIntro:
+      "공동연구, 학생 지원 또는 CReCS 연구실 방문에 관한 문의를 보내주세요.",
+    contactDetailsHeading: "연락처 정보",
+    inquiryRoutesLabel: "문의 안내",
+    inquiryRoutesTitle: "문의 목적에 맞게 연락해 주세요",
+    collaborationRouteTitle: "공동연구 및 학술교류",
+    collaborationRouteDescription:
+      "공동연구, 학술교류, 세미나 및 연구과제 논의는 이메일로 문의해 주세요.",
+    prospectiveRouteTitle: "연구실 지원",
+    prospectiveRouteDescription:
+      "대학원 진학 또는 학부연구 참여 문의 전 지원 안내 페이지를 먼저 확인해 주세요.",
+    viewOpportunitiesCta: "지원 안내 보기",
+    advisingLabel: "재학생 안내",
+    advisingTitle: "학생 상담",
+    advisingDescription:
+      "오피스아워 일정을 준비하고 있습니다.\n온라인 예약을 시작하기 전까지는 이메일로 상담 일정을 문의해 주세요.",
+    advisingStatus: "온라인 예약 준비 중",
+    advisingEmailCta: "이메일로 상담 요청하기",
+    visitLabel: "방문 전 안내",
+    visitDescription: "공과대학 1호관 139호\n방문 전 상담 일정을 먼저 확인해 주세요.",
     footerTagline: "기후회복력 연안시스템 연구실",
     footerNavigate: "바로가기",
     footerConnect: "연결",
@@ -344,8 +456,14 @@ if (currentYear) currentYear.textContent = new Date().getFullYear();
 
 function setLanguage(language) {
   document.documentElement.lang = language;
-  const pageName = document.body.dataset.page === "people" ? "People" : "Home";
-  document.title = translations[language][`pageTitle${pageName}`];
+  const pageTitles = {
+    home: "pageTitleHome",
+    people: "pageTitlePeople",
+    opportunities: "pageTitleOpportunities",
+    contact: "pageTitleContact",
+  };
+  const pageTitleKey = pageTitles[document.body.dataset.page] || "pageTitleHome";
+  document.title = translations[language][pageTitleKey];
 
   translatableElements.forEach((element) => {
     const key = element.dataset.i18n;
