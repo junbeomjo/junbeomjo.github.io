@@ -1611,9 +1611,16 @@ h1 {
   padding: 76px 0 66px;
 }
 
-.footer-brand {
+.footer-brand-group {
   align-self: start;
-  display: inline-flex;
+  display: grid;
+  justify-items: start;
+  gap: 32px;
+}
+
+.footer-brand {
+  display: inline-grid;
+  grid-template-columns: 76px auto;
   align-items: center;
   gap: 18px;
 }
@@ -1638,6 +1645,33 @@ h1 {
   color: rgba(255, 255, 255, 0.58);
   font-size: 14px;
   line-height: 1.5;
+}
+
+.footer-university-brand {
+  display: inline-grid;
+  grid-template-columns: 76px auto;
+  align-items: center;
+  gap: 18px;
+  opacity: 0.82;
+  transition: opacity 180ms ease;
+}
+
+.footer-university-brand:hover,
+.footer-university-brand:focus-visible {
+  opacity: 1;
+}
+
+.footer-university-symbol {
+  display: block;
+  width: auto;
+  height: 62px;
+  justify-self: center;
+}
+
+.footer-university-wordmark {
+  display: block;
+  width: 170px;
+  height: auto;
 }
 
 .footer-column > p {
@@ -3024,7 +3058,7 @@ h1 {
     padding: 60px 0 48px;
   }
 
-  .footer-brand {
+  .footer-brand-group {
     grid-column: 1 / -1;
   }
 
