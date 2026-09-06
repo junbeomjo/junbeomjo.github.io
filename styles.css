@@ -310,6 +310,18 @@ h1 {
   background: var(--purple);
 }
 
+.button-tertiary {
+  border-color: rgba(25, 122, 158, 0.36);
+  color: var(--coastal);
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.button-tertiary:hover,
+.button-tertiary:focus-visible {
+  color: white;
+  background: var(--coastal);
+}
+
 .research-strip {
   display: grid;
   grid-template-columns: 125px minmax(0, 1fr);
@@ -848,7 +860,7 @@ h1 {
 
 .publication-corresponding {
   margin: 7px 0 0;
-  color: var(--purple);
+  color: #607588;
   font-size: 14px;
   font-weight: 600;
   line-height: 1.55;
@@ -947,6 +959,42 @@ h1 {
 
 .publication-list-detail .publication-meta {
   margin-bottom: 8px;
+}
+
+.publication-meta-with-badge {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 10px;
+}
+
+.journal-index-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 21px;
+  padding: 2px 8px;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.journal-index-badge-scie {
+  color: var(--purple);
+  background: rgba(94, 43, 119, 0.055);
+}
+
+.journal-index-badge-kci {
+  color: var(--coastal);
+  background: rgba(25, 122, 158, 0.055);
+}
+
+.journal-index-badge-jsce {
+  color: #607588;
+  background: rgba(96, 117, 136, 0.055);
 }
 
 .publication-list-detail .publication-content h3 {
