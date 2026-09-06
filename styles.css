@@ -1751,6 +1751,15 @@ h1 {
   transform: translateX(4px);
 }
 
+.opportunities-section .section-page-link {
+  color: #79c7df;
+}
+
+.opportunities-section .section-page-link:hover,
+.opportunities-section .section-page-link:focus-visible {
+  color: #ffffff;
+}
+
 .detail-page {
   background: var(--paper);
 }

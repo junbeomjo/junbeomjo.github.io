@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+KR:wght@400;500;600;700&amp;display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=13" />
+    <link rel="stylesheet" href="styles.css?v=14" />
   </head>
   <body data-page="home">
     <header class="site-header" data-header>
@@ -286,9 +286,15 @@
               <p class="section-kicker" data-i18n="publicationsSectionKicker">Publications</p>
               <h2 data-i18n="publicationsSectionTitle">Selected publications</h2>
             </div>
-            <p class="section-intro" data-i18n="publicationsSectionIntro">
-              Recent studies spanning coastal processes, compound flooding, and climate-resilient risk assessment.
-            </p>
+            <div class="section-intro-group">
+              <p class="section-intro" data-i18n="publicationsSectionIntro">
+                Recent studies spanning coastal processes, compound flooding, and climate-resilient risk assessment.
+              </p>
+              <a class="section-page-link" href="publications.html">
+                <span data-i18n="publicationsDetailCta">View all publications</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
           </header>
 
           <div class="publication-list">
@@ -380,13 +386,6 @@
             </article>
           </div>
 
-          <div class="publications-footer">
-            <p data-i18n="publicationsFooterNote">The complete publication list will be available on the detailed Publications page.</p>
-            <a href="publications.html">
-              <span data-i18n="publicationsDetailCta">View all publications</span>
-              <span aria-hidden="true">→</span>
-            </a>
-          </div>
         </div>
       </section>
 
