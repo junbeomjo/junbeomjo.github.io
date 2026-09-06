@@ -18,20 +18,20 @@
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body data-page="home">
     <header class="site-header" data-header>
       <div class="header-inner">
-        <a class="brand" href="#home" aria-label="CReCS Lab home">
+        <a class="brand" href="index.html" aria-label="CReCS Lab home">
           <img src="assets/crecs-logo.png" alt="CReCS Lab — Climate-Resilient Coastal Systems" />
         </a>
 
         <nav class="desktop-nav" aria-label="Primary navigation">
-          <a class="is-active" href="#home" data-i18n="navHome">Home</a>
-          <a href="#research" data-i18n="navResearch">Research</a>
-          <a href="#people" data-i18n="navPeople">People</a>
-          <a href="#publications" data-i18n="navPublications">Publications</a>
-          <a href="#opportunities" data-i18n="navOpportunities">Opportunities</a>
-          <a href="#contact" data-i18n="navContact">Contact</a>
+          <a class="is-active" href="#home" data-section="home" data-i18n="navHome">Home</a>
+          <a href="#research" data-section="research" data-i18n="navResearch">Research</a>
+          <a href="people.html" data-section="people" data-i18n="navPeople">People</a>
+          <a href="#publications" data-section="publications" data-i18n="navPublications">Publications</a>
+          <a href="#opportunities" data-section="opportunities" data-i18n="navOpportunities">Opportunities</a>
+          <a href="#contact" data-section="contact" data-i18n="navContact">Contact</a>
         </nav>
 
         <div class="header-actions">
@@ -48,12 +48,12 @@
       </div>
 
       <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile navigation">
-        <a href="#home" data-i18n="navHome">Home</a>
-        <a href="#research" data-i18n="navResearch">Research</a>
-        <a href="#people" data-i18n="navPeople">People</a>
-        <a href="#publications" data-i18n="navPublications">Publications</a>
-        <a href="#opportunities" data-i18n="navOpportunities">Opportunities</a>
-        <a href="#contact" data-i18n="navContact">Contact</a>
+        <a href="#home" data-section="home" data-i18n="navHome">Home</a>
+        <a href="#research" data-section="research" data-i18n="navResearch">Research</a>
+        <a href="people.html" data-section="people" data-i18n="navPeople">People</a>
+        <a href="#publications" data-section="publications" data-i18n="navPublications">Publications</a>
+        <a href="#opportunities" data-section="opportunities" data-i18n="navOpportunities">Opportunities</a>
+        <a href="#contact" data-section="contact" data-i18n="navContact">Contact</a>
       </nav>
     </header>
 
@@ -186,10 +186,16 @@
               <p class="section-kicker" data-i18n="peopleSectionKicker">Our People</p>
               <h2 data-i18n="peopleSectionTitle">People shaping resilient coasts</h2>
             </div>
-            <p class="section-intro" data-i18n="peopleSectionIntro">
-              CReCS brings together coastal engineering, climate science, and risk analysis to address complex
-              challenges at the coast.
-            </p>
+            <div class="section-intro-group">
+              <p class="section-intro" data-i18n="peopleSectionIntro">
+                CReCS brings together coastal engineering, climate science, and risk analysis to address complex
+                challenges at the coast.
+              </p>
+              <a class="section-page-link" href="people.html">
+                <span data-i18n="peopleDetailCta">Explore the People page</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
           </header>
 
           <div class="people-subsection" id="principal-investigator">
@@ -515,7 +521,7 @@
     <footer class="site-footer">
       <div class="footer-inner">
         <div class="footer-main">
-          <a class="footer-brand" href="#home" aria-label="CReCS Lab home">
+          <a class="footer-brand" href="index.html" aria-label="CReCS Lab home">
             <img src="assets/crecs-symbol-footer-reverse.png?v=1" alt="" />
             <span>
               <strong>CReCS Lab</strong>
@@ -527,7 +533,7 @@
             <p data-i18n="footerNavigate">Navigate</p>
             <nav aria-label="Footer navigation">
               <a href="#research" data-i18n="navResearch">Research</a>
-              <a href="#people" data-i18n="navPeople">People</a>
+              <a href="people.html" data-i18n="navPeople">People</a>
               <a href="#publications" data-i18n="navPublications">Publications</a>
               <a href="#opportunities" data-i18n="navOpportunities">Opportunities</a>
             </nav>

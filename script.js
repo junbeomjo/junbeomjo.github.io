@@ -1,5 +1,7 @@
 const translations = {
   en: {
+    pageTitleHome: "CReCS Lab | Climate-Resilient Coastal Systems",
+    pageTitlePeople: "People | CReCS Lab",
     navHome: "Home",
     navResearch: "Research",
     navPeople: "People",
@@ -47,6 +49,11 @@ const translations = {
     peopleSectionTitle: "People shaping resilient coasts",
     peopleSectionIntro:
       "CReCS brings together coastal engineering, climate science, and risk analysis to address complex challenges at the coast.",
+    peopleDetailCta: "Explore the People page",
+    peopleDetailKicker: "People",
+    peopleDetailTitle: "People at CReCS",
+    peopleDetailIntro:
+      "Meet the researchers connecting coastal engineering, climate science, and risk analysis to advance resilient coastal systems.",
     peoplePiHeading: "Principal Investigator",
     piRole: "Assistant Professor",
     piName: "Junbeom Jo",
@@ -59,7 +66,36 @@ const translations = {
     profileEmail: "Email",
     profileOffice: "Office",
     piOffice: "#139, Engineering Building 1",
+    profileContact: "Contact & profiles",
+    piDetailSummary:
+      "Junbeom Jo is an Assistant Professor in the Department of Civil Engineering at Jeonbuk National University. His research examines the physical processes and cascading impacts of coastal hazards, including typhoons, waves, storm surges, and compound flooding. By integrating numerical modeling, hydraulic experiments, and socioeconomic risk assessment, he aims to advance science-based strategies for climate adaptation and resilient coastal communities.",
+    profileBackgroundLabel: "Academic background",
+    educationTitle: "Education",
+    degreePhd: "Ph.D. in Coastal and Ocean Engineering",
+    degreeMaster: "M.S. in Civil Engineering (Hydraulic Engineering)",
+    degreeBachelor: "B.S. in Civil Engineering",
+    schoolKumamoto: "Kumamoto University",
+    schoolKyonggi: "Kyonggi University",
+    profileCareerLabel: "Academic career",
+    appointmentsTitle: "Appointments",
+    assistantProfessorPeriod: "Sep 2026–Present",
+    assistantProfessorTitle: "Assistant Professor",
+    assistantProfessorInstitution: "Department of Civil Engineering · Jeonbuk National University",
+    postdocPeriod: "May 2024–\nAug 2026",
+    postdocTitle: "Postdoctoral Researcher",
+    postdocInstitution: "Kyoto University",
+    researchInterestsLabel: "Research interests",
+    researchInterestsTitle: "Linking coastal processes, risks, and resilience",
+    awardsLabel: "Recognition",
+    awardsTitle: "Awards & Honors",
+    awardKsceTitle: "Outstanding Paper Award",
+    awardKsceInstitution: "KSCE 2024 Convention · Korean Society of Civil Engineers",
+    awardAcademicTitle: "Academic Excellence Award",
+    awardAcademicInstitution: "Graduate School of Science and Technology · Kumamoto University",
+    awardPosterTitle: "Best Paper Award (Poster Session)",
+    awardPosterInstitution: "2018 Academic Conference · Korean Society of Hazard Mitigation",
     peopleStudentsHeading: "Students",
+    studentsDetailTitle: "Growing together at CReCS",
     studentsLabel: "Growing CReCS",
     studentsTitle: "Future members of CReCS",
     studentsDescription:
@@ -127,6 +163,8 @@ const translations = {
     footerAffiliation: "Department of Civil Engineering · Jeonbuk National University",
   },
   ko: {
+    pageTitleHome: "CReCS 연구실 | 기후회복력 연안시스템",
+    pageTitlePeople: "연구 구성원 | CReCS 연구실",
     navHome: "홈",
     navResearch: "연구",
     navPeople: "구성원",
@@ -174,6 +212,11 @@ const translations = {
     peopleSectionTitle: "회복력 있는 해안을 만들어가는 사람들",
     peopleSectionIntro:
       "CReCS 연구실은 해안공학, 기후과학, 위험분석을 연결해 연안의 복잡한 문제를 연구합니다.",
+    peopleDetailCta: "연구 구성원 자세히 보기",
+    peopleDetailKicker: "연구 구성원",
+    peopleDetailTitle: "CReCS를 만들어가는 사람들",
+    peopleDetailIntro:
+      "해안공학, 기후과학과 위험분석을 연결해 회복력 있는 연안시스템을 연구하는 CReCS 구성원을 소개합니다.",
     peoplePiHeading: "연구책임자",
     piRole: "조교수",
     piName: "조준범",
@@ -186,7 +229,36 @@ const translations = {
     profileEmail: "이메일",
     profileOffice: "연구실",
     piOffice: "공과대학 1호관 139호",
+    profileContact: "연락처 및 연구자 프로필",
+    piDetailSummary:
+      "조준범 교수는 전북대학교 토목공학과 조교수로, 태풍·파랑·폭풍해일·복합침수 등 연안재해의 물리 과정과 연쇄적 영향을 연구합니다. 수치모델링, 수리실험과 사회경제적 위험평가를 통합하여 기후변화에 적응하고 회복력 있는 연안사회를 만드는 과학적·공학적 기반을 마련하는 것을 목표로 합니다.",
+    profileBackgroundLabel: "학력",
+    educationTitle: "학력",
+    degreePhd: "박사 · 해안 및 해양공학",
+    degreeMaster: "석사 · 토목공학(수공학)",
+    degreeBachelor: "학사 · 토목공학",
+    schoolKumamoto: "구마모토대학교",
+    schoolKyonggi: "경기대학교",
+    profileCareerLabel: "주요 경력",
+    appointmentsTitle: "경력",
+    assistantProfessorPeriod: "2026.09–현재",
+    assistantProfessorTitle: "조교수",
+    assistantProfessorInstitution: "전북대학교 공과대학 토목공학과",
+    postdocPeriod: "2024.05–\n2026.08",
+    postdocTitle: "박사후연구원",
+    postdocInstitution: "교토대학교",
+    researchInterestsLabel: "주요 연구 분야",
+    researchInterestsTitle: "연안의 물리 과정과 위험, 회복력을 연결하는 연구",
+    awardsLabel: "수상",
+    awardsTitle: "수상 및 학술 활동",
+    awardKsceTitle: "우수논문상",
+    awardKsceInstitution: "KSCE 2024 CONVENTION · 대한토목학회",
+    awardAcademicTitle: "Academic Excellence Award",
+    awardAcademicInstitution: "구마모토대학교 자연과학대학원",
+    awardPosterTitle: "학술발표대회 우수논문상(포스터 부문)",
+    awardPosterInstitution: "2018 학술발표대회 · 한국방재학회",
     peopleStudentsHeading: "학생연구원",
+    studentsDetailTitle: "CReCS에서 함께 성장하는 연구자들",
     studentsLabel: "함께 성장하는 CReCS",
     studentsTitle: "CReCS와 함께할 연구자를 기다립니다",
     studentsDescription:
@@ -259,15 +331,21 @@ const translatableElements = document.querySelectorAll("[data-i18n]");
 const menuButton = document.querySelector(".menu-button");
 const mobileMenu = document.querySelector(".mobile-nav");
 const currentYear = document.querySelector("[data-current-year]");
+const sectionNavigationLinks = document.querySelectorAll(
+  ".desktop-nav a[data-section], .mobile-nav a[data-section]",
+);
+const pageSections = Array.from(
+  new Set(Array.from(sectionNavigationLinks, (link) => link.dataset.section)),
+)
+  .map((id) => document.getElementById(id))
+  .filter(Boolean);
 
 if (currentYear) currentYear.textContent = new Date().getFullYear();
 
 function setLanguage(language) {
   document.documentElement.lang = language;
-  document.title =
-    language === "ko"
-      ? "CReCS 연구실 | 기후회복력 연안시스템"
-      : "CReCS Lab | Climate-Resilient Coastal Systems";
+  const pageName = document.body.dataset.page === "people" ? "People" : "Home";
+  document.title = translations[language][`pageTitle${pageName}`];
 
   translatableElements.forEach((element) => {
     const key = element.dataset.i18n;
@@ -279,6 +357,12 @@ function setLanguage(language) {
     button.classList.toggle("is-selected", isSelected);
     button.setAttribute("aria-pressed", String(isSelected));
   });
+
+  try {
+    localStorage.setItem("crecs-language", language);
+  } catch {
+    // Keep the language switch functional if storage is unavailable.
+  }
 }
 
 languageButtons.forEach((button) => {
@@ -296,3 +380,53 @@ mobileMenu.addEventListener("click", (event) => {
     menuButton.setAttribute("aria-expanded", "false");
   }
 });
+
+function updateActiveNavigation() {
+  const headerHeight = Number.parseFloat(
+    getComputedStyle(document.documentElement).getPropertyValue("--header-height"),
+  );
+  const markerPosition = window.scrollY + headerHeight + 48;
+  let activeSection = pageSections[0];
+
+  pageSections.forEach((section) => {
+    if (section.offsetTop <= markerPosition) activeSection = section;
+  });
+
+  if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2) {
+    activeSection = pageSections.at(-1);
+  }
+
+  sectionNavigationLinks.forEach((link) => {
+    const isActive = link.dataset.section === activeSection.id;
+    link.classList.toggle("is-active", isActive);
+    if (isActive) {
+      link.setAttribute("aria-current", "location");
+    } else {
+      link.removeAttribute("aria-current");
+    }
+  });
+}
+
+let navigationUpdateFrame;
+
+function requestNavigationUpdate() {
+  if (navigationUpdateFrame) return;
+  navigationUpdateFrame = window.requestAnimationFrame(() => {
+    updateActiveNavigation();
+    navigationUpdateFrame = undefined;
+  });
+}
+
+if (pageSections.length > 0) {
+  window.addEventListener("scroll", requestNavigationUpdate, { passive: true });
+  window.addEventListener("resize", requestNavigationUpdate);
+  updateActiveNavigation();
+}
+
+let initialLanguage = "en";
+try {
+  initialLanguage = localStorage.getItem("crecs-language") || "en";
+} catch {
+  // English remains the default if storage is unavailable.
+}
+setLanguage(initialLanguage === "ko" ? "ko" : "en");
