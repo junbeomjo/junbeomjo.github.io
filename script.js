@@ -2,6 +2,7 @@ const translations = {
   en: {
     pageTitleHome: "CReCS Lab | Climate-Resilient Coastal Systems",
     pageTitlePeople: "People | CReCS Lab",
+    pageTitlePublications: "Publications | CReCS Lab",
     pageTitleOpportunities: "Opportunities | CReCS Lab",
     pageTitleContact: "Contact | CReCS Lab",
     navHome: "Home",
@@ -108,8 +109,35 @@ const translations = {
     publicationsSectionIntro:
       "Recent studies spanning coastal processes, compound flooding, and climate-resilient risk assessment.",
     publicationsFooterNote:
-      "The complete publication list will be available on the detailed Publications page.",
+      "Browse the complete list of peer-reviewed articles and current manuscripts.",
+    publicationsDetailCta: "View all publications",
     publicationsAllCta: "View all on Google Scholar",
+    publicationsDetailKicker: "Publications",
+    publicationsDetailTitle: "Research outputs",
+    publicationsDetailIntro:
+      "Peer-reviewed studies in coastal hazards, compound flooding, hydraulic processes, and climate-resilient risk assessment.",
+    peerReviewedLabel: "Published research",
+    peerReviewedTitle: "Peer-reviewed journal articles",
+    peerReviewedIntro: "Published journal articles listed in reverse chronological order.",
+    correspondingAuthorLabel: "Corresponding author",
+    manuscriptsLabel: "Current work",
+    manuscriptsTitle: "Manuscripts under review",
+    underReviewStatus: "Under review",
+    thesesLabel: "Degree research",
+    thesesTitle: "Theses",
+    thesesIntro: "Doctoral and master's research completed at Kumamoto University and Kyonggi University.",
+    dissertationLabel: "Doctoral research",
+    dissertationTitle: "Doctoral dissertation",
+    dissertationMeta: "Ph.D. Dissertation · Kumamoto University · 2024",
+    dissertationAdvisor: "Advisor: Prof. Sooyoul Kim",
+    mastersThesisMeta: "Master's Thesis · Kyonggi University · 2018",
+    mastersThesisTitle: "Estimation Formula for Head Loss Coefficients in Surcharged Manholes",
+    mastersThesisAdvisor: "Advisor: Prof. Seieui Yoon",
+    conferenceLabel: "Academic activities",
+    conferenceTitle: "Conference presentations",
+    conferenceIntro: "Oral presentations, posters, and conference abstracts grouped by year.",
+    oralPresentationsTitle: "Oral presentations",
+    posterPresentationsTitle: "Posters & abstracts",
     opportunitiesSectionKicker: "Opportunities",
     opportunitiesSectionTitle: "Join CReCS",
     opportunitiesSectionIntro:
@@ -221,6 +249,7 @@ const translations = {
   ko: {
     pageTitleHome: "CReCS 연구실 | 기후회복력 연안시스템",
     pageTitlePeople: "연구 구성원 | CReCS 연구실",
+    pageTitlePublications: "연구성과 | CReCS 연구실",
     pageTitleOpportunities: "지원 안내 | CReCS 연구실",
     pageTitleContact: "연락처 | CReCS 연구실",
     navHome: "홈",
@@ -327,8 +356,35 @@ const translations = {
     publicationsSectionIntro:
       "연안의 물리 과정과 복합침수, 기후회복력 기반 위험평가를 아우르는 주요 연구성과입니다.",
     publicationsFooterNote:
-      "전체 논문 목록은 추후 Publications 상세 페이지에서 확인할 수 있습니다.",
+      "등재 학술지 논문과 현재 심사 중인 연구의 전체 목록을 확인할 수 있습니다.",
+    publicationsDetailCta: "전체 연구성과 보기",
     publicationsAllCta: "Google Scholar에서 전체 보기",
+    publicationsDetailKicker: "연구성과",
+    publicationsDetailTitle: "논문 및 연구성과",
+    publicationsDetailIntro:
+      "연안재해, 복합침수, 수리현상과 기후회복력 기반 위험평가에 관한 연구성과를 소개합니다.",
+    peerReviewedLabel: "게재 논문",
+    peerReviewedTitle: "등재 학술지 논문",
+    peerReviewedIntro: "학술지에 게재된 논문을 최신순으로 정리했습니다.",
+    correspondingAuthorLabel: "교신저자",
+    manuscriptsLabel: "진행 중인 연구",
+    manuscriptsTitle: "심사 중인 논문",
+    underReviewStatus: "심사 중",
+    thesesLabel: "학위 연구",
+    thesesTitle: "학위논문",
+    thesesIntro: "구마모토대학교 박사학위논문과 경기대학교 석사학위논문입니다.",
+    dissertationLabel: "박사학위 연구",
+    dissertationTitle: "박사학위논문",
+    dissertationMeta: "박사학위논문 · 구마모토대학교 · 2024",
+    dissertationAdvisor: "지도교수: 김수열 교수",
+    mastersThesisMeta: "석사학위논문 · 경기대학교 · 2018",
+    mastersThesisTitle: "과부하 맨홀의 손실계수 산정식",
+    mastersThesisAdvisor: "지도교수: 윤세의 교수",
+    conferenceLabel: "학술 활동",
+    conferenceTitle: "학술대회 발표",
+    conferenceIntro: "구두발표와 포스터·초록을 연도별로 정리했습니다.",
+    oralPresentationsTitle: "구두발표",
+    posterPresentationsTitle: "포스터 및 초록",
     opportunitiesSectionKicker: "지원 안내",
     opportunitiesSectionTitle: "CReCS와 함께하기",
     opportunitiesSectionIntro:
@@ -451,6 +507,76 @@ const pageSections = Array.from(
 )
   .map((id) => document.getElementById(id))
   .filter(Boolean);
+const conferenceContainers = document.querySelectorAll("[data-conference-list]");
+
+function appendHighlightedAuthor(container, authors) {
+  const name = "Junbeom Jo";
+  const nameIndex = authors.indexOf(name);
+
+  if (nameIndex === -1) {
+    container.textContent = authors;
+    return;
+  }
+
+  container.append(document.createTextNode(authors.slice(0, nameIndex)));
+  const strong = document.createElement("strong");
+  strong.textContent = name;
+  container.append(strong, document.createTextNode(authors.slice(nameIndex + name.length)));
+}
+
+function renderConferencePresentations(language) {
+  if (!window.conferencePresentations || conferenceContainers.length === 0) return;
+
+  conferenceContainers.forEach((container) => {
+    const presentations = window.conferencePresentations[container.dataset.conferenceList] || [];
+    const years = [...new Set(presentations.map((presentation) => presentation.year))].sort((a, b) => b - a);
+    container.replaceChildren();
+
+    years.forEach((year, yearIndex) => {
+      const yearPresentations = presentations.filter((presentation) => presentation.year === year);
+      const details = document.createElement("details");
+      details.className = "conference-year-group";
+      details.open = yearIndex === 0;
+
+      const summary = document.createElement("summary");
+      const yearLabel = document.createElement("span");
+      yearLabel.textContent = year;
+      const count = document.createElement("small");
+      count.textContent = yearPresentations.length;
+      summary.append(yearLabel, count);
+
+      const list = document.createElement("ol");
+      list.className = "conference-list";
+
+      yearPresentations.forEach((presentation) => {
+        const item = document.createElement("li");
+        const title = document.createElement("h4");
+        title.textContent = presentation.title;
+
+        const authors = document.createElement("p");
+        authors.className = "conference-authors";
+        appendHighlightedAuthor(authors, presentation.authors);
+
+        const venue = document.createElement("p");
+        venue.className = "conference-venue";
+        venue.append(document.createTextNode(presentation.venue));
+
+        if (presentation.accepted) {
+          const status = document.createElement("span");
+          status.className = "conference-status";
+          status.textContent = language === "ko" ? "발표 예정" : "Accepted";
+          venue.append(document.createTextNode(" "), status);
+        }
+
+        item.append(title, authors, venue);
+        list.append(item);
+      });
+
+      details.append(summary, list);
+      container.append(details);
+    });
+  });
+}
 
 if (currentYear) currentYear.textContent = new Date().getFullYear();
 
@@ -459,6 +585,7 @@ function setLanguage(language) {
   const pageTitles = {
     home: "pageTitleHome",
     people: "pageTitlePeople",
+    publications: "pageTitlePublications",
     opportunities: "pageTitleOpportunities",
     contact: "pageTitleContact",
   };
@@ -469,6 +596,8 @@ function setLanguage(language) {
     const key = element.dataset.i18n;
     if (translations[language][key]) element.textContent = translations[language][key];
   });
+
+  renderConferencePresentations(language);
 
   languageButtons.forEach((button) => {
     const isSelected = button.dataset.lang === language;

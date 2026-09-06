@@ -846,6 +846,18 @@ h1 {
   font-weight: 700;
 }
 
+.publication-corresponding {
+  margin: 7px 0 0;
+  color: var(--purple);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.55;
+}
+
+.publication-corresponding span {
+  letter-spacing: 0.01em;
+}
+
 .publication-doi {
   display: inline-block;
   margin-top: 13px;
@@ -914,6 +926,280 @@ h1 {
 .publications-footer a:focus-visible {
   background: var(--purple);
   transform: translateY(-2px);
+}
+
+.detail-section-intro {
+  max-width: 720px;
+  margin: 18px 0 0;
+  color: rgba(16, 42, 67, 0.66);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.publication-list-detail {
+  margin-left: 66px;
+}
+
+.publication-list-detail .publication-item {
+  gap: clamp(16px, 1.8vw, 25px);
+  padding: clamp(18px, 2vw, 26px) 10px;
+}
+
+.publication-list-detail .publication-meta {
+  margin-bottom: 8px;
+}
+
+.publication-list-detail .publication-content h3 {
+  max-width: 1040px;
+  font-size: clamp(18px, 1.55vw, 23px);
+  line-height: 1.4;
+}
+
+.publication-list-detail .publication-authors {
+  margin-top: 10px;
+}
+
+.publication-list-detail .publication-corresponding {
+  margin-top: 4px;
+}
+
+.publication-list-detail .publication-doi {
+  margin-top: 7px;
+}
+
+.publication-year-block + .publication-year-block {
+  margin-top: clamp(30px, 3.8vw, 48px);
+}
+
+.publication-year-heading {
+  margin: 0 0 18px;
+  color: var(--purple);
+  font-size: clamp(25px, 2.8vw, 38px);
+  font-weight: 700;
+  letter-spacing: -0.035em;
+  line-height: 1.15;
+}
+
+.publication-year-block .publication-year {
+  display: none;
+}
+
+.publication-year-block .publication-item {
+  grid-template-columns: 42px minmax(0, 1fr) 50px;
+}
+
+.publication-number {
+  padding-top: 2px;
+  color: var(--purple);
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}
+
+.publication-item-no-link {
+  grid-template-columns: 92px minmax(0, 1fr);
+}
+
+.publications-detail-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin: 34px 0 0 66px;
+}
+
+.publications-detail-footer a {
+  min-height: 52px;
+  padding: 0 22px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  color: #ffffff;
+  background: var(--ink-deep);
+  font-size: 14px;
+  font-weight: 700;
+  transition: transform 180ms ease, background-color 180ms ease;
+}
+
+.publications-detail-footer a:hover,
+.publications-detail-footer a:focus-visible {
+  background: var(--purple);
+  transform: translateY(-2px);
+}
+
+.dissertation-card {
+  margin-left: 66px;
+  padding: clamp(24px, 3vw, 38px);
+  border-left: 4px solid var(--purple);
+  background: var(--ink-deep);
+  color: #ffffff;
+}
+
+.dissertation-card .publication-meta {
+  color: #8ed0e3;
+}
+
+.dissertation-card h3 {
+  max-width: 1040px;
+  margin: 14px 0 16px;
+  color: #ffffff;
+  font-size: clamp(19px, 1.8vw, 26px);
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.4;
+}
+
+.dissertation-card p:not(.publication-meta) {
+  margin: 0 0 5px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 15px;
+}
+
+.dissertation-card small {
+  color: rgba(255, 255, 255, 0.56);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.thesis-list {
+  margin-left: 66px;
+  display: grid;
+  gap: 12px;
+}
+
+.thesis-list .dissertation-card {
+  margin-left: 0;
+}
+
+.dissertation-card-masters {
+  border-left-color: var(--coastal);
+  background: #12395d;
+}
+
+.conference-categories {
+  margin-left: 66px;
+}
+
+.conference-categories > section + section {
+  margin-top: clamp(64px, 8vw, 104px);
+}
+
+.conference-categories > section > h3 {
+  margin: 0 0 30px;
+  color: var(--ink-deep);
+  font-size: clamp(28px, 3vw, 42px);
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+}
+
+.conference-year-groups {
+  border-bottom: 1px solid rgba(16, 42, 67, 0.2);
+}
+
+.conference-year-group {
+  border-top: 1px solid rgba(16, 42, 67, 0.2);
+}
+
+.conference-year-group summary {
+  min-height: 86px;
+  padding: 0 8px;
+  display: grid;
+  grid-template-columns: 1fr auto 28px;
+  gap: 18px;
+  align-items: center;
+  color: var(--ink-deep);
+  cursor: pointer;
+  list-style: none;
+}
+
+.conference-year-group summary::-webkit-details-marker {
+  display: none;
+}
+
+.conference-year-group summary > span {
+  color: var(--purple);
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.conference-year-group summary > small {
+  min-width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--coastal);
+  background: rgba(25, 122, 158, 0.09);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.conference-year-group summary::after {
+  content: "+";
+  color: var(--ink-deep);
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  transition: transform 180ms ease;
+}
+
+.conference-year-group[open] summary::after {
+  transform: rotate(45deg);
+}
+
+.conference-list {
+  margin: 0;
+  padding: 0 8px 16px;
+  list-style: none;
+}
+
+.conference-list li {
+  padding: 28px 0;
+  border-top: 1px solid rgba(16, 42, 67, 0.11);
+}
+
+.conference-list h4 {
+  max-width: 1000px;
+  margin: 0;
+  color: var(--ink-deep);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.5;
+}
+
+.conference-authors,
+.conference-venue {
+  margin: 11px 0 0;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.conference-authors {
+  color: rgba(16, 42, 67, 0.65);
+}
+
+.conference-authors strong {
+  color: var(--ink-deep);
+}
+
+.conference-venue {
+  color: var(--coastal);
+  font-weight: 600;
+}
+
+.conference-status {
+  display: inline-flex;
+  margin-left: 6px;
+  padding: 3px 8px;
+  border: 1px solid rgba(86, 41, 110, 0.24);
+  color: var(--purple);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
 }
 
 .opportunities-section {
@@ -1793,6 +2079,10 @@ h1 {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.page-subnav-four {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .detail-content-section {
   scroll-margin-top: var(--header-height);
   padding: clamp(88px, 9vw, 148px) 0;
@@ -2378,7 +2668,12 @@ h1 {
   .process-grid,
   .detail-action-panel,
   .contact-detail-grid,
-  .advising-panel {
+  .advising-panel,
+  .publication-list-detail,
+  .publications-detail-footer,
+  .dissertation-card,
+  .thesis-list,
+  .conference-categories {
     margin-left: 44px;
   }
 
@@ -2594,9 +2889,25 @@ h1 {
     padding: 30px 58px 30px 4px;
   }
 
+  .publication-year-block .publication-item {
+    grid-template-columns: 32px minmax(0, 1fr);
+    column-gap: 14px;
+    padding: 20px 52px 20px 4px;
+  }
+
+  .publication-year-block .publication-number {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .publication-year-block .publication-content {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
   .publication-arrow {
     position: absolute;
-    top: 28px;
+    top: 20px;
     right: 4px;
     width: 40px;
     height: 40px;
@@ -2753,7 +3064,12 @@ html[lang="en"] [data-i18n="visitDescription"] {
   .process-grid,
   .detail-action-panel,
   .contact-detail-grid,
-  .advising-panel {
+  .advising-panel,
+  .publication-list-detail,
+  .publications-detail-footer,
+  .dissertation-card,
+  .thesis-list,
+  .conference-categories {
     margin-left: 0;
   }
 }
