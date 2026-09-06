@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">CReCS Lab favicon</title>
+  <desc id="desc">Simplified wave and storm symbol for CReCS Lab.</desc>
+  <!-- JBNU traditional palette: Blue C100 M80 Y20 K0 / Magenta C40 M100 Y40 K0 -->
+  <rect x="2" y="2" width="60" height="60" rx="15" fill="#004387"/>
+  <path fill="#FFFFFF" d="M8.5 39.5C14 22 30 23 35 34c-6-5.8-13.5-4-16.2 2.6-3.2 8 3.8 14.8 13.2 14.8 8.2 0 14.8-4.5 18.7-10.6-1.8 11-10.5 18.1-22.6 17.6C15 57.9 5.2 49.4 8.5 39.5Z"/>
+  <path fill="#A6165F" d="M29 20c6.2-10 19.8-11 27-2.2-6.1-4.2-14.8-4-20.3.8-2.8 2.5-4.3 5.7-4.2 8.8-3-1.7-4-4.5-2.5-7.4Z"/>
+  <path fill="#1675A7" d="M53.8 18c5.5 9.7 1.6 21.5-7.7 25.2 4.2-4.7 5.8-11.3 3-17.1-2.1-4.5-6.3-7.6-10.5-8.6 4.2-1.9 10.8-1.7 15.2.5Z"/>
+  <path fill="#FFFFFF" d="M33 24.5c5-4 12.3-1.8 14 4.2 1.2 4.4-1.4 9-5.8 10.3 2.7-2 3.9-5.6 2.7-8.6-1.4-3.6-5.1-5.4-8.7-4.2-1.9.6-3.4 1.8-4.4 3.4-.1-2 .7-3.8 2.2-5.1Z" opacity=".88"/>
+</svg>
