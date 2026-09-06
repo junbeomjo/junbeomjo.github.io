@@ -1,40 +1,459 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <title>나를 소개합니다</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      max-width: 600px;
-      margin: 80px auto;
-      background: white;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 10px rgba(0,0,0,0.1);
-      text-align: center;
-    }
-    h1 {
-      margin-bottom: 10px;
-    }
-    p {
-      line-height: 1.6;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>안녕하세요 👋</h1>
-    <p>저는 jbs371입니다.</p>
-    <p>이곳은 저를 소개하는 개인 홈페이지입니다.</p>
-    <p>관심사: 개발, 공부, 기록</p>
-    <p>이메일: example@email.com</p>
-  </div>
-</body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="CReCS Lab advances science and engineering for climate-resilient coastal systems."
+    />
+    <title>CReCS Lab | Climate-Resilient Coastal Systems</title>
+    <link rel="icon" href="assets/favicon.png?v=2" type="image/png" />
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=2" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+KR:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <div class="header-inner">
+        <a class="brand" href="#home" aria-label="CReCS Lab home">
+          <img src="assets/crecs-logo.png" alt="CReCS Lab — Climate-Resilient Coastal Systems" />
+        </a>
+
+        <nav class="desktop-nav" aria-label="Primary navigation">
+          <a class="is-active" href="#home" data-i18n="navHome">Home</a>
+          <a href="#research" data-i18n="navResearch">Research</a>
+          <a href="#people" data-i18n="navPeople">People</a>
+          <a href="#publications" data-i18n="navPublications">Publications</a>
+          <a href="#opportunities" data-i18n="navOpportunities">Opportunities</a>
+          <a href="#contact" data-i18n="navContact">Contact</a>
+        </nav>
+
+        <div class="header-actions">
+          <div class="language-switch" aria-label="Language selection">
+            <button class="is-selected" type="button" data-lang="en" aria-pressed="true">EN</button>
+            <span aria-hidden="true">/</span>
+            <button type="button" data-lang="ko" aria-pressed="false">한국어</button>
+          </div>
+          <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu">
+            <span></span><span></span><span></span>
+            <span class="sr-only">Open menu</span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile navigation">
+        <a href="#home" data-i18n="navHome">Home</a>
+        <a href="#research" data-i18n="navResearch">Research</a>
+        <a href="#people" data-i18n="navPeople">People</a>
+        <a href="#publications" data-i18n="navPublications">Publications</a>
+        <a href="#opportunities" data-i18n="navOpportunities">Opportunities</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-image" role="img" aria-label="Scientific visualization of a typhoon, waves, and compound coastal flooding"></div>
+        <div class="hero-wash" aria-hidden="true"></div>
+
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="eyebrow">Coastal Engineering · Climate Adaptation · Resilience</p>
+            <h1 data-i18n="headline">Engineering Resilient Coasts for a Changing Climate</h1>
+            <p class="intro" data-i18n="intro">
+              The Climate-Resilient Coastal Systems (CReCS) Lab investigates compound coastal hazards and
+              assesses their impacts and risks to help build more resilient coastal communities.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#research">
+                <span data-i18n="researchCta">Explore Our Research</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+              <a class="button button-secondary" href="#opportunities">
+                <span data-i18n="joinCta">Join CReCS</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="research-strip" id="research-summary" aria-label="Research areas">
+            <p class="strip-label" data-i18n="researchLabel">Research areas</p>
+            <div class="research-topics">
+              <span data-i18n="topic1">Coastal Hazard Modeling</span>
+              <span data-i18n="topic2">Compound Flooding</span>
+              <span data-i18n="topic3">Computational &amp; Experimental Hydraulics</span>
+              <span data-i18n="topic4">Climate Risk &amp; Resilience</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="research-section" id="research">
+        <div class="section-inner">
+          <header class="research-heading">
+            <div>
+              <p class="section-kicker" data-i18n="researchSectionKicker">Our Research</p>
+              <h2 data-i18n="researchSectionTitle">From physical processes to societal resilience</h2>
+            </div>
+            <p class="section-intro" data-i18n="researchSectionIntro">
+              Our research connects coastal processes, hazard interactions, and societal impacts to support
+              science-based climate adaptation.
+            </p>
+          </header>
+
+          <div class="research-grid">
+            <article class="research-card research-card-hazard">
+              <div class="card-top">
+                <span class="card-number">01</span>
+                <span class="card-accent" aria-hidden="true"></span>
+              </div>
+              <h3 data-i18n="topic1">Coastal Hazard Modeling</h3>
+              <p class="card-description" data-i18n="researchCard1Desc">
+                We simulate typhoons, waves, storm surges, and tides to understand and predict coastal hazards.
+              </p>
+              <div class="card-tags" aria-label="Keywords">
+                <span data-i18n="researchCard1Tag1">Typhoons</span>
+                <span data-i18n="researchCard1Tag2">Waves</span>
+                <span data-i18n="researchCard1Tag3">Storm Surge</span>
+                <span data-i18n="researchCard1Tag4">Tides</span>
+              </div>
+            </article>
+
+            <article class="research-card research-card-flooding">
+              <div class="card-top">
+                <span class="card-number">02</span>
+                <span class="card-accent" aria-hidden="true"></span>
+              </div>
+              <h3 data-i18n="topic2">Compound Flooding</h3>
+              <p class="card-description" data-i18n="researchCard2Desc">
+                We examine interactions among storm surge, waves, rainfall-runoff, drainage systems, and coastal
+                defenses.
+              </p>
+              <div class="card-tags" aria-label="Keywords">
+                <span data-i18n="researchCard2Tag1">Surge–Wave</span>
+                <span data-i18n="researchCard2Tag2">Rainfall–Runoff</span>
+                <span data-i18n="researchCard2Tag3">Drainage</span>
+                <span data-i18n="researchCard2Tag4">Overtopping</span>
+              </div>
+            </article>
+
+            <article class="research-card research-card-hydraulics">
+              <div class="card-top">
+                <span class="card-number">03</span>
+                <span class="card-accent" aria-hidden="true"></span>
+              </div>
+              <h3 data-i18n="topic3">Computational &amp; Experimental Hydraulics</h3>
+              <p class="card-description" data-i18n="researchCard3Desc">
+                We combine numerical analysis and hydraulic experiments to investigate complex coastal and urban
+                flows.
+              </p>
+              <div class="card-tags" aria-label="Keywords">
+                <span data-i18n="researchCard3Tag1">Numerical Models</span>
+                <span data-i18n="researchCard3Tag2">Hydraulic Experiments</span>
+                <span data-i18n="researchCard3Tag3">Validation</span>
+              </div>
+            </article>
+
+            <article class="research-card research-card-resilience">
+              <div class="card-top">
+                <span class="card-number">04</span>
+                <span class="card-accent" aria-hidden="true"></span>
+              </div>
+              <h3 data-i18n="topic4">Climate Risk &amp; Resilience</h3>
+              <p class="card-description" data-i18n="researchCard4Desc">
+                We assess socioeconomic impacts and explore pathways for climate adaptation and coastal resilience.
+              </p>
+              <div class="card-tags" aria-label="Keywords">
+                <span data-i18n="researchCard4Tag1">Impact Assessment</span>
+                <span data-i18n="researchCard4Tag2">Adaptation</span>
+                <span data-i18n="researchCard4Tag3">Resilience</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="people-section" id="people">
+        <div class="section-inner">
+          <header class="people-heading">
+            <div>
+              <p class="section-kicker" data-i18n="peopleSectionKicker">Our People</p>
+              <h2 data-i18n="peopleSectionTitle">People shaping resilient coasts</h2>
+            </div>
+            <p class="section-intro" data-i18n="peopleSectionIntro">
+              CReCS brings together coastal engineering, climate science, and risk analysis to address complex
+              challenges at the coast.
+            </p>
+          </header>
+
+          <div class="people-subsection" id="principal-investigator">
+            <div class="subsection-heading">
+              <span>01</span>
+              <h3 data-i18n="peoplePiHeading">Principal Investigator</h3>
+            </div>
+
+            <article class="pi-profile">
+              <figure class="pi-portrait">
+                <img src="assets/junbeom-jo.jpg" alt="Portrait of Junbeom Jo" />
+              </figure>
+
+              <div class="pi-content">
+                <p class="pi-role" data-i18n="piRole">Assistant Professor</p>
+                <div class="pi-name-row">
+                  <h3 data-i18n="piName">Junbeom Jo</h3>
+                  <span data-i18n="piNameSecondary">조준범</span>
+                </div>
+                <p class="pi-affiliation" data-i18n="piAffiliation">
+                  Jeonbuk National University · Department of Civil Engineering
+                </p>
+
+                <div class="pi-keywords" aria-label="Research keywords">
+                  <span data-i18n="piKeyword1">Coastal Hazard Modeling</span>
+                  <span data-i18n="piKeyword2">Compound Flooding</span>
+                  <span data-i18n="piKeyword3">Storm Surge &amp; Waves</span>
+                  <span data-i18n="piKeyword4">Climate Risk &amp; Resilience</span>
+                </div>
+
+                <dl class="profile-details">
+                  <div>
+                    <dt data-i18n="profileEmail">Email</dt>
+                    <dd><a href="mailto:jbjo@jbnu.ac.kr">jbjo@jbnu.ac.kr</a></dd>
+                  </div>
+                  <div>
+                    <dt data-i18n="profileOffice">Office</dt>
+                    <dd data-i18n="piOffice">Room 139, Engineering Building 1</dd>
+                  </div>
+                </dl>
+
+                <div class="profile-links">
+                  <a href="https://scholar.google.com/citations?user=TWpAiN8AAAAJ" target="_blank" rel="noreferrer">
+                    Google Scholar <span aria-hidden="true">↗</span>
+                  </a>
+                  <a href="https://orcid.org/0000-0003-4687-1146" target="_blank" rel="noreferrer">
+                    ORCID <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="people-subsection student-subsection" id="students">
+            <div class="subsection-heading">
+              <span>02</span>
+              <h3 data-i18n="peopleStudentsHeading">Students</h3>
+            </div>
+
+            <div class="students-panel">
+              <div>
+                <p class="students-label" data-i18n="studentsLabel">Growing CReCS</p>
+                <h3 data-i18n="studentsTitle">Future members of CReCS</h3>
+                <p data-i18n="studentsDescription">
+                  We welcome motivated undergraduate and graduate students interested in coastal hazards, climate
+                  adaptation, and resilience.
+                </p>
+              </div>
+              <a class="students-contact" href="#opportunities">
+                <span data-i18n="studentsCta">Explore Opportunities</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="publications-section" id="publications">
+        <div class="section-inner">
+          <header class="publications-heading">
+            <div>
+              <p class="section-kicker" data-i18n="publicationsSectionKicker">Publications</p>
+              <h2 data-i18n="publicationsSectionTitle">Selected publications</h2>
+            </div>
+            <p class="section-intro" data-i18n="publicationsSectionIntro">
+              Recent studies spanning coastal processes, compound flooding, and climate-resilient risk assessment.
+            </p>
+          </header>
+
+          <div class="publication-list">
+            <article class="publication-item">
+              <div class="publication-year">2026</div>
+              <div class="publication-content">
+                <p class="publication-meta">Ocean Engineering · Vol. 357 · 125439</p>
+                <h3>
+                  <a href="https://doi.org/10.1016/j.oceaneng.2026.125439" target="_blank" rel="noreferrer">
+                    Numerical study on tide-surge interaction and sequential surge oscillations in Tokyo Bay
+                  </a>
+                </h3>
+                <p class="publication-authors">
+                  <strong>Junbeom Jo</strong>, Yuji Araki, Toshitaka Baba, Sooyoul Kim, and Nobuhito Mori
+                </p>
+                <a class="publication-doi" href="https://doi.org/10.1016/j.oceaneng.2026.125439" target="_blank" rel="noreferrer">
+                  10.1016/j.oceaneng.2026.125439
+                </a>
+              </div>
+              <a class="publication-arrow" href="https://doi.org/10.1016/j.oceaneng.2026.125439" target="_blank" rel="noreferrer" aria-label="Open publication">
+                ↗
+              </a>
+            </article>
+
+            <article class="publication-item">
+              <div class="publication-year">2025</div>
+              <div class="publication-content">
+                <p class="publication-meta">Journal of Hydrology · Vol. 661 · 133698</p>
+                <h3>
+                  <a href="https://doi.org/10.1016/j.jhydrol.2025.133698" target="_blank" rel="noreferrer">
+                    Coastal and pluvial compound flooding of surge, wave, tide, rainfall-runoff, sewer flow, and
+                    seawall failure at coastal urban areas
+                  </a>
+                </h3>
+                <p class="publication-authors">
+                  <strong>Junbeom Jo</strong>, Sooyoul Kim, Jungsoo Kim, and Nobuhito Mori
+                </p>
+                <a class="publication-doi" href="https://doi.org/10.1016/j.jhydrol.2025.133698" target="_blank" rel="noreferrer">
+                  10.1016/j.jhydrol.2025.133698
+                </a>
+              </div>
+              <a class="publication-arrow" href="https://doi.org/10.1016/j.jhydrol.2025.133698" target="_blank" rel="noreferrer" aria-label="Open publication">
+                ↗
+              </a>
+            </article>
+
+            <article class="publication-item">
+              <div class="publication-year">2025</div>
+              <div class="publication-content">
+                <p class="publication-meta">Ocean Engineering · Vol. 341 · 122540</p>
+                <h3>
+                  <a href="https://doi.org/10.1016/j.oceaneng.2025.122540" target="_blank" rel="noreferrer">
+                    Impact of atmospheric forcing on storm surge prediction between numerical weather model and
+                    parametric typhoon model
+                  </a>
+                </h3>
+                <p class="publication-authors">
+                  <strong>Junbeom Jo</strong>, Sooyoul Kim, Masaya Toyoda, Yu-Lin Tsai, Jungsoo Kim, and Nobuhito Mori
+                </p>
+                <a class="publication-doi" href="https://doi.org/10.1016/j.oceaneng.2025.122540" target="_blank" rel="noreferrer">
+                  10.1016/j.oceaneng.2025.122540
+                </a>
+              </div>
+              <a class="publication-arrow" href="https://doi.org/10.1016/j.oceaneng.2025.122540" target="_blank" rel="noreferrer" aria-label="Open publication">
+                ↗
+              </a>
+            </article>
+
+            <article class="publication-item">
+              <div class="publication-year">2024</div>
+              <div class="publication-content">
+                <p class="publication-meta">Coastal Engineering · Vol. 189 · 104448</p>
+                <h3>
+                  <a href="https://doi.org/10.1016/j.coastaleng.2023.104448" target="_blank" rel="noreferrer">
+                    Combined storm surge and wave overtopping inundation based on fully coupled storm
+                    surge-wave-tide model
+                  </a>
+                </h3>
+                <p class="publication-authors">
+                  <strong>Junbeom Jo</strong>, Sooyoul Kim, Nobuhito Mori, and Hajime Mase
+                </p>
+                <a class="publication-doi" href="https://doi.org/10.1016/j.coastaleng.2023.104448" target="_blank" rel="noreferrer">
+                  10.1016/j.coastaleng.2023.104448
+                </a>
+              </div>
+              <a class="publication-arrow" href="https://doi.org/10.1016/j.coastaleng.2023.104448" target="_blank" rel="noreferrer" aria-label="Open publication">
+                ↗
+              </a>
+            </article>
+          </div>
+
+          <div class="publications-footer">
+            <p data-i18n="publicationsFooterNote">The complete publication list will be available on the detailed Publications page.</p>
+            <a href="https://scholar.google.com/citations?user=TWpAiN8AAAAJ" target="_blank" rel="noreferrer">
+              <span data-i18n="publicationsAllCta">View all on Google Scholar</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="opportunities-section" id="opportunities">
+        <div class="section-inner">
+          <header class="opportunities-heading">
+            <div>
+              <p class="section-kicker" data-i18n="opportunitiesSectionKicker">Opportunities</p>
+              <h2 data-i18n="opportunitiesSectionTitle">Join CReCS</h2>
+            </div>
+            <p class="section-intro" data-i18n="opportunitiesSectionIntro">
+              We welcome inquiries from motivated students who want to advance science and engineering for
+              climate-resilient coastal systems.
+            </p>
+          </header>
+
+          <div class="opportunity-grid">
+            <article class="opportunity-card">
+              <div class="opportunity-number">01</div>
+              <p class="opportunity-type" data-i18n="graduateLabel">Graduate Research</p>
+              <h3 data-i18n="graduateTitle">Graduate Students</h3>
+              <p data-i18n="graduateDescription">
+                Inquiries are welcome from prospective master's, doctoral, and integrated MS–PhD students.
+              </p>
+              <div class="opportunity-tags">
+                <span data-i18n="graduateTag1">Master's</span>
+                <span data-i18n="graduateTag2">Doctoral</span>
+                <span data-i18n="graduateTag3">Integrated MS–PhD</span>
+              </div>
+            </article>
+
+            <article class="opportunity-card">
+              <div class="opportunity-number">02</div>
+              <p class="opportunity-type" data-i18n="undergraduateLabel">Early Research Experience</p>
+              <h3 data-i18n="undergraduateTitle">Undergraduate Researchers</h3>
+              <p data-i18n="undergraduateDescription">
+                Undergraduate students interested in research experience, thesis preparation, or project
+                participation are encouraged to get in touch.
+              </p>
+              <div class="opportunity-tags">
+                <span data-i18n="undergraduateTag1">Research Experience</span>
+                <span data-i18n="undergraduateTag2">Thesis Preparation</span>
+                <span data-i18n="undergraduateTag3">Project Participation</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="opportunity-backgrounds">
+            <span data-i18n="backgroundsLabel">Relevant backgrounds</span>
+            <p data-i18n="backgroundsDescription">
+              Civil, coastal, ocean, hydraulic, and environmental engineering, as well as related computational
+              and data fields.
+            </p>
+          </div>
+
+          <div class="application-panel">
+            <div class="application-copy">
+              <p class="application-label" data-i18n="applicationLabel">How to apply</p>
+              <h3 data-i18n="applicationTitle">Start with a brief introduction</h3>
+              <p data-i18n="applicationDescription">
+                Email your CV, academic transcript, and a short note describing your research interests.
+              </p>
+            </div>
+            <div class="funding-note">
+              <span data-i18n="fundingLabel">Funding</span>
+              <p data-i18n="fundingDescription">
+                Funding opportunities may be available depending on the position and project. Details will be
+                discussed during the interview.
+              </p>
+            </div>
+            <a class="application-contact" href="mailto:jbjo@jbnu.ac.kr?subject=Prospective%20CReCS%20Lab%20Student">
+              <span data-i18n="applicationCta">Send an inquiry</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>
-출처: https://recording-it.tistory.com/127 [나를 위한 꾸준한 기록 - 다시개발:티스토리]
