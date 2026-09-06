@@ -1739,6 +1739,15 @@ h1 {
   font-weight: 700;
 }
 
+.section-page-link {
+  min-height: 48px;
+  padding: 0 19px;
+  border: 1px solid rgba(86, 41, 110, 0.42);
+  color: var(--purple);
+  background: rgba(255, 255, 255, 0.7);
+  transition: color 180ms ease, border-color 180ms ease, background-color 180ms ease, transform 180ms ease;
+}
+
 .section-page-link span:last-child,
 .detail-cta span:last-child {
   transition: transform 180ms ease;
@@ -1751,13 +1760,25 @@ h1 {
   transform: translateX(4px);
 }
 
+.section-page-link:hover,
+.section-page-link:focus-visible {
+  border-color: var(--ink-deep);
+  color: #ffffff;
+  background: var(--ink-deep);
+  transform: translateY(-2px);
+}
+
 .opportunities-section .section-page-link {
-  color: #79c7df;
+  border-color: #79c7df;
+  color: var(--ink-deep);
+  background: #79c7df;
 }
 
 .opportunities-section .section-page-link:hover,
 .opportunities-section .section-page-link:focus-visible {
-  color: #ffffff;
+  border-color: #ffffff;
+  color: var(--ink-deep);
+  background: #ffffff;
 }
 
 .detail-page {
@@ -2924,6 +2945,11 @@ h1 {
 
   .section-intro {
     font-size: 17px;
+  }
+
+  .section-page-link {
+    width: 100%;
+    justify-content: space-between;
   }
 
   .research-grid {
