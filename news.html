@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-11746WW62N"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-11746WW62N');
+    </script>
+    <meta name="description" content="News, academic exchange, and research activities from CReCS Lab at Jeonbuk National University." />
+    <title>News | CReCS Lab</title>
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+KR:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css?v=15" />
+    <link rel="stylesheet" href="news.css?v=1" />
+  </head>
+  <body data-page="news">
+    <header class="site-header" data-header>
+      <div class="header-inner">
+        <a class="brand" href="index.html" aria-label="CReCS Lab home"><img src="assets/crecs-logo.png" alt="CReCS Lab — Climate-Resilient Coastal Systems" /></a>
+        <nav class="desktop-nav" aria-label="Primary navigation">
+          <a href="index.html" data-i18n="navHome">Home</a>
+          <a href="index.html#research" data-i18n="navResearch">Research</a>
+          <a href="people.html" data-i18n="navPeople">People</a>
+          <a href="publications.html" data-i18n="navPublications">Publications</a>
+          <a href="opportunities.html" data-i18n="navOpportunities">Opportunities</a>
+          <a href="contact.html" data-i18n="navContact">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <div class="language-switch" aria-label="Language selection">
+            <button class="is-selected" type="button" data-lang="en" aria-pressed="true">EN</button><span aria-hidden="true">/</span><button type="button" data-lang="ko" aria-pressed="false">한국어</button>
+          </div>
+          <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span><span class="sr-only">Open menu</span></button>
+        </div>
+      </div>
+      <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile navigation">
+        <a href="index.html" data-i18n="navHome">Home</a>
+        <a href="index.html#research" data-i18n="navResearch">Research</a>
+        <a href="people.html" data-i18n="navPeople">People</a>
+        <a href="publications.html" data-i18n="navPublications">Publications</a>
+        <a href="opportunities.html" data-i18n="navOpportunities">Opportunities</a>
+        <a href="contact.html" data-i18n="navContact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="news-archive" class="news-archive-main">
+        <div class="section-inner">
+          <header class="news-archive-header">
+            <p class="section-kicker" data-news-i18n="archiveKicker">NEWS &amp; UPDATES</p>
+            <h1 data-news-i18n="archiveTitle">News from CReCS</h1>
+            <p class="news-archive-intro" data-news-i18n="archiveIntro">Conferences, fieldwork, and everyday discoveries from our lab.</p>
+          </header>
+          <div class="news-archive-topline">
+            <span class="news-archive-count"><span data-news-i18n="archiveCount">All stories</span><b data-news-count>1</b></span>
+          </div>
+          <div class="news-grid" data-news-grid></div>
+        </div>
+      </section>
+      <section id="news-story" class="news-story-page" hidden></section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-main">
+          <div class="footer-brand-group">
+            <a class="footer-brand" href="index.html"><img src="assets/crecs-symbol-footer-reverse.png" alt="" /><span><strong>CReCS Lab</strong><small data-i18n="footerTagline">Climate-Resilient Coastal Systems</small></span></a>
+            <a class="footer-university-brand" href="https://www.jbnu.ac.kr/" target="_blank" rel="noreferrer" aria-label="Jeonbuk National University website"><img class="footer-university-symbol" src="assets/jbnu-symbol-footer-reverse.svg" alt="" /><img class="footer-university-wordmark" src="assets/jbnu-wordmark-footer-reverse.svg" alt="Jeonbuk National University" /></a>
+          </div>
+          <div class="footer-column"><p data-i18n="footerNavigate">Navigate</p><nav aria-label="Footer navigation"><a href="index.html#research" data-i18n="navResearch">Research</a><a href="people.html" data-i18n="navPeople">People</a><a href="publications.html" data-i18n="navPublications">Publications</a><a href="opportunities.html" data-i18n="navOpportunities">Opportunities</a></nav></div>
+          <div class="footer-column"><p data-i18n="footerConnect">Connect</p><nav aria-label="External profiles"><a href="contact.html" data-i18n="navContact">Contact</a><a href="mailto:jbjo@jbnu.ac.kr" data-i18n="footerEmail">Email</a><a href="https://scholar.google.com/citations?user=TWpAiN8AAAAJ" target="_blank" rel="noreferrer">Google Scholar ↗</a><a href="https://orcid.org/0000-0003-4687-1146" target="_blank" rel="noreferrer">ORCID ↗</a></nav></div>
+        </div>
+        <div class="footer-bottom"><p>© <span data-current-year>2026</span> CReCS Lab. <span data-i18n="footerRights">All rights reserved.</span></p><p data-i18n="footerAffiliation">Department of Civil Engineering · Jeonbuk National University</p></div>
+      </div>
+    </footer>
+    <script src="news.js?v=1"></script>
+    <script src="script.js?v=6"></script>
+  </body>
+</html>
