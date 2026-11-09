@@ -1,6 +1,7 @@
 const translations = {
   en: {
     pageTitleHome: "CReCS Lab | Climate-Resilient Coastal Systems",
+    pageTitleResearch: "Research | CReCS Lab",
     pageTitlePeople: "People | CReCS Lab",
     pageTitlePublications: "Publications | CReCS Lab",
     pageTitleOpportunities: "Opportunities | CReCS Lab",
@@ -25,6 +26,7 @@ const translations = {
     topic4: "Climate Risk & Resilience",
     researchSectionKicker: "Our Research",
     researchSectionTitle: "From physical processes to societal resilience",
+    researchDetailCta: "Explore our research",
     researchSectionIntro:
       "Our research connects coastal processes, hazard interactions, and societal impacts to support science-based climate adaptation.",
     researchCard1Desc:
@@ -246,6 +248,7 @@ const translations = {
   },
   ko: {
     pageTitleHome: "CReCS 연구실 | 기후회복력 연안시스템",
+    pageTitleResearch: "연구 분야 | CReCS 연구실",
     pageTitlePeople: "연구 구성원 | CReCS 연구실",
     pageTitlePublications: "연구성과 | CReCS 연구실",
     pageTitleOpportunities: "지원 안내 | CReCS 연구실",
@@ -270,6 +273,7 @@ const translations = {
     topic4: "기후위험과 회복력",
     researchSectionKicker: "연구 분야",
     researchSectionTitle: "물리 과정의 이해에서 사회적 회복력까지",
+    researchDetailCta: "연구 자세히 보기",
     researchSectionIntro:
       "연안의 물리 과정과 재해 간 상호작용, 사회경제적 영향을 연결해 과학적 기후적응의 기반을 만듭니다.",
     researchCard1Desc:
@@ -547,7 +551,7 @@ function renderConferencePresentations(language) {
       yearPresentations.forEach((presentation) => {
         const item = document.createElement("li");
         const title = document.createElement("h4");
-        title.textContent = presentation.title;
+        title.textContent = language === "ko" ? (presentation.titleKo || presentation.title) : presentation.title;
 
         const authors = document.createElement("p");
         authors.className = "conference-authors";
@@ -555,7 +559,7 @@ function renderConferencePresentations(language) {
 
         const venue = document.createElement("p");
         venue.className = "conference-venue";
-        venue.append(document.createTextNode(presentation.venue));
+        venue.append(document.createTextNode(language === "ko" ? (presentation.venueKo || presentation.venue) : presentation.venue));
 
         if (presentation.accepted) {
           const status = document.createElement("span");
@@ -580,6 +584,7 @@ function setLanguage(language) {
   document.documentElement.lang = language;
   const pageTitles = {
     home: "pageTitleHome",
+    research: "pageTitleResearch",
     people: "pageTitlePeople",
     publications: "pageTitlePublications",
     opportunities: "pageTitleOpportunities",
@@ -666,10 +671,12 @@ if (pageSections.length > 0) {
   updateActiveNavigation();
 }
 
-let initialLanguage = "en";
-try {
-  initialLanguage = localStorage.getItem("crecs-language") || "en";
-} catch {
-  // English remains the default if storage is unavailable.
+let initialLanguage = new URLSearchParams(window.location.search).get("lang");
+if (!["ko", "en"].includes(initialLanguage)) {
+  try {
+    initialLanguage = localStorage.getItem("crecs-language") || "en";
+  } catch {
+    initialLanguage = "en";
+  }
 }
 setLanguage(initialLanguage === "ko" ? "ko" : "en");
