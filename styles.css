@@ -91,6 +91,11 @@ a {
 
 .desktop-nav a {
   position: relative;
+  flex: 0 0 var(--nav-item-width, 5em);
+  width: var(--nav-item-width, 5em);
+  text-align: center;
+  white-space: nowrap;
+  line-height: 1.5;
   padding: 41px 0 38px;
   color: rgba(16, 42, 67, 0.76);
   font-size: 18px;
@@ -98,6 +103,15 @@ a {
   letter-spacing: -0.01em;
   transition: color 180ms ease;
 }
+
+/* Reserve the same menu space in both languages; em widths follow the compact header size. */
+.desktop-nav a[data-i18n="navHome"] { --nav-item-width: 3.2em; }
+.desktop-nav a[data-i18n="navResearch"] { --nav-item-width: 4.9em; }
+.desktop-nav a[data-i18n="navPeople"] { --nav-item-width: 3.7em; }
+.desktop-nav a[data-i18n="navPublications"] { --nav-item-width: 6.4em; }
+.desktop-nav a[data-news-i18n="nav"] { --nav-item-width: 3em; }
+.desktop-nav a[data-i18n="navOpportunities"] { --nav-item-width: 7.3em; }
+.desktop-nav a[data-i18n="navContact"] { --nav-item-width: 4.3em; }
 
 .desktop-nav a::after {
   content: "";
