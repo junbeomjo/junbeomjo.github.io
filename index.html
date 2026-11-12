@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="script.js?v=15"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-11746WW62N"></script>
     <script>
@@ -26,8 +27,9 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+KR:wght@400;500;600;700&amp;display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css?v=16" />
-    <link rel="stylesheet" href="news.css?v=1" />
+    <link rel="stylesheet" href="styles.css?v=20" />
+    <link rel="stylesheet" href="news.css?v=2" />
+    <script defer blocking="render" src="news.js?v=7"></script>
   </head>
   <body data-page="home">
     <header class="site-header" data-header>
@@ -37,12 +39,13 @@
         </a>
 
         <nav class="desktop-nav" aria-label="Primary navigation">
-          <a class="is-active" href="#home" data-section="home" data-i18n="navHome">Home</a>
-          <a href="research.html" data-section="research" data-i18n="navResearch">Research</a>
-          <a href="people.html" data-section="people" data-i18n="navPeople">People</a>
-          <a href="publications.html" data-section="publications" data-i18n="navPublications">Publications</a>
-          <a href="opportunities.html" data-section="opportunities" data-i18n="navOpportunities">Opportunities</a>
-          <a href="contact.html" data-section="contact" data-i18n="navContact">Contact</a>
+          <a class="is-active" href="#home" aria-current="page" data-i18n="navHome">Home</a>
+          <a href="research.html" data-i18n="navResearch">Research</a>
+          <a href="people.html" data-i18n="navPeople">People</a>
+          <a href="publications.html" data-i18n="navPublications">Publications</a>
+          <a href="news.html" data-i18n="navNews">News</a>
+          <a href="opportunities.html" data-i18n="navOpportunities">Opportunities</a>
+          <a href="contact.html" data-i18n="navContact">Contact</a>
         </nav>
 
         <div class="header-actions">
@@ -59,12 +62,13 @@
       </div>
 
       <nav class="mobile-nav" id="mobile-menu" aria-label="Mobile navigation">
-        <a href="#home" data-section="home" data-i18n="navHome">Home</a>
-        <a href="research.html" data-section="research" data-i18n="navResearch">Research</a>
-        <a href="people.html" data-section="people" data-i18n="navPeople">People</a>
-        <a href="publications.html" data-section="publications" data-i18n="navPublications">Publications</a>
-        <a href="opportunities.html" data-section="opportunities" data-i18n="navOpportunities">Opportunities</a>
-        <a href="contact.html" data-section="contact" data-i18n="navContact">Contact</a>
+        <a class="is-active" href="#home" aria-current="page" data-i18n="navHome">Home</a>
+        <a href="research.html" data-i18n="navResearch">Research</a>
+        <a href="people.html" data-i18n="navPeople">People</a>
+        <a href="publications.html" data-i18n="navPublications">Publications</a>
+        <a href="news.html" data-i18n="navNews">News</a>
+        <a href="opportunities.html" data-i18n="navOpportunities">Opportunities</a>
+        <a href="contact.html" data-i18n="navContact">Contact</a>
       </nav>
     </header>
 
@@ -267,7 +271,7 @@
                   </div>
                   <div>
                     <dt data-i18n="profileOffice">Office</dt>
-                    <dd data-i18n="piOffice">#139, Engineering Building 1</dd>
+                    <dd data-i18n="piOffice">Room 143, Engineering Building 1 (temporary office)</dd>
                   </div>
                 </dl>
 
@@ -294,7 +298,7 @@
 
             <div class="students-panel">
               <div>
-                <p class="students-label" data-i18n="studentsLabel">Growing CReCS</p>
+                <p class="students-label" data-i18n="studentsLabel">GROWING CReCS</p>
                 <h3 data-i18n="studentsTitle">Future members of CReCS</h3>
                 <p data-i18n="studentsDescription">
                   We welcome motivated undergraduate and graduate students interested in coastal hazards, climate
@@ -541,7 +545,7 @@
               </div>
               <div class="contact-detail">
                 <span data-i18n="contactOfficeLabel">Office</span>
-                <p data-i18n="contactOfficeValue">#139, Engineering Building 1</p>
+                <p data-i18n="contactOfficeValue">Room 143, Engineering Building 1 (temporary office)</p>
               </div>
               <div class="contact-detail contact-detail-address">
                 <span data-i18n="contactAddressLabel">Address</span>
@@ -588,6 +592,7 @@
               <a href="people.html" data-i18n="navPeople">People</a>
               <a href="publications.html" data-i18n="navPublications">Publications</a>
               <a href="opportunities.html" data-i18n="navOpportunities">Opportunities</a>
+              <a href="news.html" data-i18n="navNews">News</a>
             </nav>
           </div>
 
@@ -609,7 +614,5 @@
       </div>
     </footer>
 
-    <script src="news.js?v=2"></script>
-    <script src="script.js?v=10"></script>
   </body>
 </html>

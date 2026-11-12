@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="script.js?v=15"></script>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-11746WW62N"></script>
     <script>
@@ -17,8 +18,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Noto+Sans+KR:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=16" />
-    <link rel="stylesheet" href="news.css?v=1" />
+    <link rel="stylesheet" href="styles.css?v=20" />
+    <link rel="stylesheet" href="news.css?v=2" />
+    <script defer blocking="render" src="news.js?v=7"></script>
   </head>
   <body data-page="news">
     <header class="site-header" data-header>
@@ -29,6 +31,7 @@
           <a href="research.html" data-i18n="navResearch">Research</a>
           <a href="people.html" data-i18n="navPeople">People</a>
           <a href="publications.html" data-i18n="navPublications">Publications</a>
+          <a class="is-active" href="news.html" aria-current="page" data-i18n="navNews">News</a>
           <a href="opportunities.html" data-i18n="navOpportunities">Opportunities</a>
           <a href="contact.html" data-i18n="navContact">Contact</a>
         </nav>
@@ -44,19 +47,24 @@
         <a href="research.html" data-i18n="navResearch">Research</a>
         <a href="people.html" data-i18n="navPeople">People</a>
         <a href="publications.html" data-i18n="navPublications">Publications</a>
+        <a class="is-active" href="news.html" aria-current="page" data-i18n="navNews">News</a>
         <a href="opportunities.html" data-i18n="navOpportunities">Opportunities</a>
         <a href="contact.html" data-i18n="navContact">Contact</a>
       </nav>
     </header>
 
-    <main>
+    <main class="detail-page">
       <section id="news-archive" class="news-archive-main">
-        <div class="section-inner">
-          <header class="news-archive-header">
-            <p class="section-kicker" data-news-i18n="archiveKicker">NEWS &amp; UPDATES</p>
-            <h1 data-news-i18n="archiveTitle">News from CReCS</h1>
-            <p class="news-archive-intro" data-news-i18n="archiveIntro">Conferences, fieldwork, and everyday discoveries from our lab.</p>
-          </header>
+        <header class="detail-hero">
+          <div class="section-inner detail-hero-inner">
+            <div>
+              <p class="section-kicker" data-news-i18n="archiveKicker">News</p>
+              <h1 data-news-i18n="archiveTitle">News from CReCS</h1>
+            </div>
+            <p class="detail-hero-intro" data-news-i18n="archiveIntro">Conferences, fieldwork, and everyday discoveries from our lab.</p>
+          </div>
+        </header>
+        <div class="section-inner news-archive-list">
           <div class="news-archive-topline">
             <span class="news-archive-count"><span data-news-i18n="archiveCount">All stories</span><b data-news-count>1</b></span>
           </div>
@@ -73,13 +81,11 @@
             <a class="footer-brand" href="index.html"><img src="assets/crecs-symbol-footer-reverse.png" alt="" /><span><strong>CReCS Lab</strong><small data-i18n="footerTagline">Climate-Resilient Coastal Systems</small></span></a>
             <a class="footer-university-brand" href="https://www.jbnu.ac.kr/" target="_blank" rel="noreferrer" aria-label="Jeonbuk National University website"><img class="footer-university-symbol" src="assets/jbnu-symbol-footer-reverse.svg" alt="" /><img class="footer-university-wordmark" src="assets/jbnu-wordmark-footer-reverse.svg" alt="Jeonbuk National University" /></a>
           </div>
-          <div class="footer-column"><p data-i18n="footerNavigate">Navigate</p><nav aria-label="Footer navigation"><a href="research.html" data-i18n="navResearch">Research</a><a href="people.html" data-i18n="navPeople">People</a><a href="publications.html" data-i18n="navPublications">Publications</a><a href="opportunities.html" data-i18n="navOpportunities">Opportunities</a></nav></div>
+          <div class="footer-column"><p data-i18n="footerNavigate">Navigate</p><nav aria-label="Footer navigation"><a href="research.html" data-i18n="navResearch">Research</a><a href="people.html" data-i18n="navPeople">People</a><a href="publications.html" data-i18n="navPublications">Publications</a><a href="opportunities.html" data-i18n="navOpportunities">Opportunities</a><a href="news.html" data-i18n="navNews">News</a></nav></div>
           <div class="footer-column"><p data-i18n="footerConnect">Connect</p><nav aria-label="External profiles"><a href="contact.html" data-i18n="navContact">Contact</a><a href="mailto:jbjo@jbnu.ac.kr" data-i18n="footerEmail">Email</a><a href="https://scholar.google.com/citations?user=TWpAiN8AAAAJ" target="_blank" rel="noreferrer">Google Scholar ↗</a><a href="https://orcid.org/0000-0003-4687-1146" target="_blank" rel="noreferrer">ORCID ↗</a></nav></div>
         </div>
         <div class="footer-bottom"><p>© <span data-current-year>2026</span> CReCS Lab. <span data-i18n="footerRights">All rights reserved.</span></p><p data-i18n="footerAffiliation">Department of Civil Engineering · Jeonbuk National University</p></div>
       </div>
     </footer>
-    <script src="news.js?v=2"></script>
-    <script src="script.js?v=10"></script>
   </body>
 </html>

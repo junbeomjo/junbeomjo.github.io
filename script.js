@@ -10,6 +10,7 @@ const translations = {
     navResearch: "Research",
     navPeople: "People",
     navPublications: "Publications",
+    navNews: "News",
     navOpportunities: "Opportunities",
     navContact: "Contact",
     eyebrow: "Coastal Engineering · Climate Adaptation · Resilience",
@@ -71,7 +72,7 @@ const translations = {
     piKeyword4: "Climate Risk & Resilience",
     profileEmail: "Email",
     profileOffice: "Office",
-    piOffice: "#139, Engineering Building 1",
+    piOffice: "Room 143, Engineering Building 1 (temporary office)",
     profileContact: "Contact & profiles",
     piDetailSummary:
       "Junbeom Jo is an Assistant Professor in the Department of Civil Engineering at Jeonbuk National University. His research examines the physical processes and cascading impacts of coastal hazards, including typhoons, waves, storm surges, and compound flooding. By integrating numerical modeling, hydraulic experiments, and socioeconomic risk assessment, he aims to advance science-based strategies for climate adaptation and resilient coastal communities.",
@@ -102,7 +103,7 @@ const translations = {
     awardPosterInstitution: "2018 Academic Conference · Korean Society of Hazard Mitigation",
     peopleStudentsHeading: "Students",
     studentsDetailTitle: "Growing together at CReCS",
-    studentsLabel: "Growing CReCS",
+    studentsLabel: "GROWING CReCS",
     studentsTitle: "Future members of CReCS",
     studentsDescription:
       "We welcome motivated undergraduate and graduate students interested in coastal hazards, climate adaptation, and resilience.",
@@ -199,6 +200,9 @@ const translations = {
       "Admission follows Jeonbuk National University requirements. Funding opportunities may be available depending on the position and project, and details will be discussed individually.",
     opportunitiesEmailCta: "Send a prospective student inquiry",
     opportunitiesContactNote: "Domestic and international inquiries are welcome.",
+    graduateCategory: "Graduate",
+    undergraduateCategory: "Undergraduate",
+    publishedInKorean: "Published in Korean",
     contactSectionKicker: "Contact",
     contactSectionTitle: "Connect with CReCS",
     contactSectionIntro:
@@ -212,7 +216,7 @@ const translations = {
     contactPhoneLabel: "Phone",
     contactPhoneValue: "+82-63-270-2345",
     contactOfficeLabel: "Office",
-    contactOfficeValue: "#139, Engineering Building 1",
+    contactOfficeValue: "Room 143, Engineering Building 1 (temporary office)",
     contactAddressLabel: "Address",
     contactAddressValue:
       "567 Baekje-daero, Deokjin-gu, Jeonju-si, Jeonbuk State 54896, Republic of Korea",
@@ -238,7 +242,7 @@ const translations = {
     advisingStatus: "Online booking available",
     advisingEmailCta: "Book an advising appointment",
     visitLabel: "Before your visit",
-    visitDescription: "Please confirm an appointment\nbefore visiting Room 139,\nEngineering Building 1.",
+    visitDescription: "Room 143, Engineering Building 1 (temporary office)\nPlease confirm your appointment before visiting.",
     footerTagline: "Climate-Resilient Coastal Systems",
     footerNavigate: "Navigate",
     footerConnect: "Connect",
@@ -257,6 +261,7 @@ const translations = {
     navResearch: "연구",
     navPeople: "구성원",
     navPublications: "연구성과",
+    navNews: "소식",
     navOpportunities: "지원 안내",
     navContact: "연락처",
     eyebrow: "해안공학 · 기후적응 · 회복력",
@@ -277,7 +282,7 @@ const translations = {
     researchSectionIntro:
       "연안의 물리 과정과 재해 간 상호작용, 사회경제적 영향을 연결해 과학적 기후적응의 기반을 만듭니다.",
     researchCard1Desc:
-      "태풍·파랑·폭풍해일·조석을 수치적으로 모의해 연안재해의 발생과 전파 과정을 이해하고 예측합니다.",
+      "태풍과 파랑, 폭풍해일, 조석을 수치모형으로 재현해 연안의 파고와 수위를 예측합니다.",
     researchCard1Tag1: "태풍",
     researchCard1Tag2: "파랑",
     researchCard1Tag3: "폭풍해일",
@@ -289,8 +294,8 @@ const translations = {
     researchCard2Tag3: "하수관망",
     researchCard2Tag4: "월파",
     researchCard3Desc:
-      "수치해석과 수리실험을 결합해 복잡한 연안 및 도시 수리현상을 규명합니다.",
-    researchCard3Tag1: "수치모델",
+      "해안과 도시의 물 흐름을 수치모형으로 재현하고, 수리실험으로 계산 결과를 검증합니다.",
+    researchCard3Tag1: "수치모형",
     researchCard3Tag2: "수리실험",
     researchCard3Tag3: "검증",
     researchCard4Desc:
@@ -298,15 +303,14 @@ const translations = {
     researchCard4Tag1: "영향평가",
     researchCard4Tag2: "기후적응",
     researchCard4Tag3: "회복력",
-    peopleSectionKicker: "연구 구성원",
-    peopleSectionTitle: "회복력 있는 해안을 만들어가는 사람들",
+    peopleSectionKicker: "구성원",
+    peopleSectionTitle: "회복력 있는 해안을 만들어 가는 사람들",
     peopleSectionIntro:
       "CReCS 연구실은 해안공학, 기후과학, 위험분석을 연결해 연안의 복잡한 문제를 연구합니다.",
-    peopleDetailCta: "연구 구성원 자세히 보기",
+    peopleDetailCta: "구성원 소개 보기",
     peopleDetailKicker: "연구 구성원",
     peopleDetailTitle: "CReCS를 만들어가는 사람들",
-    peopleDetailIntro:
-      "해안공학, 기후과학과 위험분석을 연결해 회복력 있는 연안시스템을 연구하는 CReCS 구성원을 소개합니다.",
+    peopleDetailIntro: "해안공학, 기후과학과 위험분석을 연결해 회복력 있는 연안시스템을 연구하는 CReCS 구성원을 소개합니다.",
     peoplePiHeading: "연구책임자",
     piRole: "조교수",
     piName: "조준범",
@@ -318,19 +322,19 @@ const translations = {
     piKeyword4: "기후위험과 회복력",
     profileEmail: "이메일",
     profileOffice: "연구실",
-    piOffice: "공과대학 1호관 139호",
+    piOffice: "공과대학 1호관 143호 (임시)",
     profileContact: "연락처 및 연구자 프로필",
     piDetailSummary:
-      "조준범 교수는 전북대학교 토목공학과 조교수로, 태풍·파랑·폭풍해일·복합침수 등 연안재해의 물리 과정과 연쇄적 영향을 연구합니다. 수치모델링, 수리실험과 사회경제적 위험평가를 통합하여 기후변화에 적응하고 회복력 있는 연안사회를 만드는 과학적·공학적 기반을 마련하는 것을 목표로 합니다.",
-    profileBackgroundLabel: "학력",
+      "조준범 교수는 태풍·파랑·폭풍해일·복합침수 등 연안재해가 발생하는 과정과 그 연쇄적 영향을 연구합니다.\n수치모델링과 수리실험, 사회·경제적 위험평가를 바탕으로 연안 지역이 기후변화에 적응하고 재해에 대응할 방안을 찾습니다.",
+    profileBackgroundLabel: "",
     educationTitle: "학력",
     degreePhd: "박사 · 해안 및 해양공학",
     degreeMaster: "석사 · 토목공학(수공학)",
     degreeBachelor: "학사 · 토목공학",
     schoolKumamoto: "구마모토대학교",
     schoolKyonggi: "경기대학교",
-    profileCareerLabel: "주요 경력",
-    appointmentsTitle: "경력",
+    profileCareerLabel: "",
+    appointmentsTitle: "주요 경력",
     assistantProfessorPeriod: "2026.09–현재",
     assistantProfessorTitle: "조교수",
     assistantProfessorInstitution: "전북대학교 공과대학 토목공학과",
@@ -352,20 +356,19 @@ const translations = {
     studentsLabel: "함께 성장하는 CReCS",
     studentsTitle: "CReCS와 함께할 연구자를 기다립니다",
     studentsDescription:
-      "연안재해, 기후적응, 회복력 연구에 관심 있는 대학원생과 학부연구생을 기다립니다.",
+      "연안재해, 기후적응, 회복력 연구에 관심 있는\n대학원생과 학부연구생을 환영합니다.",
     studentsCta: "지원 안내 보기",
     publicationsSectionKicker: "연구성과",
     publicationsSectionTitle: "주요 논문",
     publicationsSectionIntro:
-      "연안의 물리 과정과 복합침수, 기후회복력 기반 위험평가를 아우르는 주요 연구성과입니다.",
+      "연안의 물리 과정과 복합침수, 기후변화에 따른 위험을 다룬 주요 논문입니다.",
     publicationsFooterNote:
       "등재 학술지 논문과 현재 심사 중인 연구의 전체 목록을 확인할 수 있습니다.",
     publicationsDetailCta: "전체 연구성과 보기",
     publicationsAllCta: "Google Scholar에서 전체 보기",
     publicationsDetailKicker: "연구성과",
     publicationsDetailTitle: "논문 및 연구성과",
-    publicationsDetailIntro:
-      "연안재해, 복합침수, 수리현상과 기후회복력 기반 위험평가에 관한 연구성과를 소개합니다.",
+    publicationsDetailIntro: "",
     peerReviewedLabel: "게재 논문",
     peerReviewedTitle: "등재 학술지 논문",
     correspondingAuthorLabel: "교신저자",
@@ -388,7 +391,7 @@ const translations = {
     opportunitiesSectionKicker: "지원 안내",
     opportunitiesSectionTitle: "CReCS와 함께하기",
     opportunitiesSectionIntro:
-      "기후회복력 있는 연안시스템을 위한 과학과 공학을 함께 발전시킬 열정 있는 학생들의 문의를 기다립니다.",
+      "연안재해와 기후변화에 대응할 방법을 함께 연구하고 싶은 학생들의 문의를 기다립니다.",
     graduateLabel: "대학원 연구",
     graduateTitle: "대학원생",
     graduateDescription:
@@ -399,17 +402,17 @@ const translations = {
     undergraduateLabel: "연구 경험의 시작",
     undergraduateTitle: "학부연구생",
     undergraduateDescription:
-      "연구 경험, 졸업논문 준비 또는 연구과제 참여에 관심 있는 학부생은 자유롭게 문의할 수 있습니다.",
+      "연구 경험을 쌓고 싶거나 졸업논문 준비, 연구과제 참여에 관심 있는 학부생은 편하게 문의해 주세요.",
     undergraduateTag1: "연구 경험",
     undergraduateTag2: "졸업논문 준비",
     undergraduateTag3: "연구과제 참여",
     backgroundsLabel: "관련 전공",
     backgroundsDescription:
-      "토목·해안·해양·수공·환경공학 및 계산과학·데이터 분야를 포함한 관련 전공자를 환영합니다.",
+      "토목·해안·해양·수공·환경공학과 계산과학·데이터 분야 등 관련 전공 학생을 환영합니다.",
     applicationLabel: "지원 방법",
     applicationTitle: "간단한 자기소개로 시작하세요",
     applicationDescription:
-      "이력서, 성적증명서와 관심 연구 분야를 설명한 짧은 글을 이메일로 보내주세요.",
+      "이력서와 성적증명서를 이메일에 첨부하고\n관심 있는 연구 주제를 간단히 적어 주세요.",
     fundingLabel: "재정 지원",
     fundingDescription:
       "과정과 참여 연구과제에 따라 지원 가능 여부가 달라질 수 있으며, 자세한 내용은 면담을 통해 안내합니다.",
@@ -418,15 +421,15 @@ const translations = {
     opportunitiesDetailTitle: "CReCS 연구 참여 안내",
     opportunitiesDetailIntro:
       "연안재해를 이해하고 기후적응과 회복력을 위한 과학적 해법을 함께 만들어갈 학생을 기다립니다.",
-    opportunitiesPathwaysHeading: "모집 분야",
+    opportunitiesPathwaysHeading: "모집 대상",
     opportunitiesGraduateDetail:
-      "해안공학, 복합침수 및 기후위험 연구에 관심 있는 석사과정, 박사과정 및 석박사통합과정 지원 예정자의 문의를 환영합니다.",
+      "해안공학, 복합침수, 기후위험에 관심이 있고\n석사·박사·석박사통합과정 진학을 희망하는 학생은 문의해 주세요.",
     opportunitiesUndergraduateDetail:
-      "학부생은 연구 경험, 졸업논문 준비 또는 진행 중인 연구과제 참여를 통해 연구실 활동을 시작할 수 있습니다.",
-    fitLabel: "연구 적합성",
+      "연구 경험을 쌓고 싶은 학부생은 편하게 문의해 주세요.\n졸업논문을 준비하거나 진행 중인 연구과제에 참여할 수 있습니다.",
+    fitLabel: "연구 관심 분야",
     fitTitle: "이런 학생과 잘 맞습니다",
     fitDescription:
-      "토목·해안·해양·수공·환경공학 및 계산과학·데이터 분야의 학생을 환영합니다.\n전공보다 새로운 문제에 대한 호기심과 주도성, 여러 분야를 함께 배우려는 태도를 중요하게 생각합니다.",
+      "토목·해안·해양·수공·환경공학과 계산과학·데이터 분야의 학생을 환영합니다.\n새로운 문제에 호기심을 갖고 스스로 탐구하며, 여러 분야를 함께 배우려는 태도를 중요하게 생각합니다.",
     fitTag1: "해안공학",
     fitTag2: "수공학",
     fitTag3: "기후적응",
@@ -436,46 +439,49 @@ const translations = {
     inquiryProcessLabel: "지원 절차",
     inquiryProcessTitle: "문의 방법",
     inquiryStep1Title: "자료 준비",
-    inquiryStep1Description: "이력서, 성적증명서와 관심 연구 분야를 설명한\n짧은 글을 준비해 주세요.",
+    inquiryStep1Description: "이력서와 성적증명서를 준비하고\n관심 있는 연구 주제를 짧게 정리해 주세요.",
     inquiryStep2Title: "이메일 문의",
     inquiryStep2Description: "간단한 자기소개와 희망 과정 또는 활동,\n시작 희망 시기를 함께 알려 주세요.",
-    inquiryStep3Title: "연구 적합성 면담",
-    inquiryStep3Description: "관심 분야와 가능한 연구 주제,\n이후 절차를 면담을 통해 논의합니다.",
+    inquiryStep3Title: "연구 주제 면담",
+    inquiryStep3Description: "관심 분야와 가능한 연구 주제를 논의하고\n이후 절차를 안내합니다.",
     admissionsLabel: "입학 및 재정 지원",
     admissionsDescription:
-      "입학은 전북대학교의 관련 규정과 절차를 따릅니다. 재정 지원은 과정과 참여 연구과제에 따라 달라질 수 있으며 개별 면담에서 안내합니다.",
-    opportunitiesEmailCta: "학생 지원 문의 보내기",
-    opportunitiesContactNote: "국내외 학생의 문의를 모두 환영합니다.",
+      "대학원 입학은 전북대학교의 규정과 절차를 따릅니다.\n재정 지원 여부는 과정과 참여하는 연구과제에 따라 달라질 수 있으며, 자세한 내용은 개별 면담에서 안내합니다.",
+    opportunitiesEmailCta: "이메일로 지원 문의",
+    opportunitiesContactNote: "국내외 학생 모두의 문의를 환영합니다.",
+    graduateCategory: "Graduate",
+    undergraduateCategory: "Undergraduate",
+    publishedInKorean: "Published in Korean",
     contactSectionKicker: "연락처",
     contactSectionTitle: "CReCS와 연결하기",
     contactSectionIntro:
       "공동연구, 학생 지원 및 기후회복력 있는 연안 연구에 관한 다양한 논의를 환영합니다.",
     contactInquiryLabel: "연구 및 협력 문의",
-    contactInquiryTitle: "회복력 있는 연안의 미래를 함께 탐구합니다.",
+    contactInquiryTitle: "공동연구 및\n연구실 지원문의",
     contactInquiryDescription:
-      "공동연구, 학술교류 또는 CReCS 연구실 지원에 관한 문의는 이메일로 연락해 주세요.",
+      "공동연구, 학술교류 또는 CReCS 연구실 지원에 관해\n궁금한 점은 이메일로 문의해 주세요.",
     contactEmailCta: "이메일 보내기",
     contactEmailLabel: "이메일",
     contactPhoneLabel: "전화",
     contactPhoneValue: "063-270-2345",
     contactOfficeLabel: "연구실",
-    contactOfficeValue: "공과대학 1호관 139호",
+    contactOfficeValue: "공과대학 1호관 143호 (임시)",
     contactAddressLabel: "주소",
     contactAddressValue: "54896 전북특별자치도 전주시 덕진구 백제대로 567",
-    contactMapCta: "Google 지도에서 보기",
+    contactMapCta: "공과대학 1호관 지도 보기",
     contactDetailKicker: "연락처",
-    contactDetailTitle: "CReCS에 연락하기",
+    contactDetailTitle: "문의 및 방문 안내",
     contactDetailIntro:
-      "공동연구, 학생 지원 또는 CReCS 연구실 방문에 관한 문의를 보내주세요.",
+      "연구실을 방문하실 때는 공과대학 1호관 143호로 오세요.\n기존 연구실인 139호는 공사 중입니다.",
     contactDetailsHeading: "연락처 정보",
     inquiryRoutesLabel: "문의 안내",
     inquiryRoutesTitle: "문의 목적에 맞게 연락해 주세요",
     collaborationRouteTitle: "공동연구 및 학술교류",
     collaborationRouteDescription:
-      "공동연구, 학술교류, 세미나 및 연구과제 논의는 이메일로 문의해 주세요.",
+      "공동연구, 학술교류, 세미나 및 연구과제에 관한 문의는\n이메일로 보내 주세요.",
     prospectiveRouteTitle: "연구실 지원",
     prospectiveRouteDescription:
-      "대학원 진학 또는 학부연구 참여 문의 전 지원 안내 페이지를 먼저 확인해 주세요.",
+      "대학원 진학이나 학부 연구 참여에 관심이 있다면\n지원 방법과 제출 자료를 먼저 확인해 주세요.",
     viewOpportunitiesCta: "지원 안내 보기",
     advisingLabel: "재학생 안내",
     advisingTitle: "학생 상담",
@@ -484,30 +490,15 @@ const translations = {
     advisingStatus: "온라인 예약 가능",
     advisingEmailCta: "학생 상담 예약하기",
     visitLabel: "방문 전 안내",
-    visitDescription: "공과대학 1호관 139호\n방문 전 상담 일정을 먼저 확인해 주세요.",
+    visitDescription: "공과대학 1호관 143호 (임시)\n방문 전 상담 일정을 먼저 확인해 주세요.",
     footerTagline: "기후회복력 연안시스템 연구실",
     footerNavigate: "바로가기",
-    footerConnect: "연결",
+    footerConnect: "연락처 및 프로필",
     footerEmail: "이메일",
     footerRights: "모든 권리를 보유합니다.",
     footerAffiliation: "전북대학교 공과대학 토목공학과",
   },
 };
-
-const languageButtons = document.querySelectorAll("[data-lang]");
-const translatableElements = document.querySelectorAll("[data-i18n]");
-const menuButton = document.querySelector(".menu-button");
-const mobileMenu = document.querySelector(".mobile-nav");
-const currentYear = document.querySelector("[data-current-year]");
-const sectionNavigationLinks = document.querySelectorAll(
-  ".desktop-nav a[data-section], .mobile-nav a[data-section]",
-);
-const pageSections = Array.from(
-  new Set(Array.from(sectionNavigationLinks, (link) => link.dataset.section)),
-)
-  .map((id) => document.getElementById(id))
-  .filter(Boolean);
-const conferenceContainers = document.querySelectorAll("[data-conference-list]");
 
 function appendHighlightedAuthor(container, authors) {
   const name = "Junbeom Jo";
@@ -525,9 +516,9 @@ function appendHighlightedAuthor(container, authors) {
 }
 
 function renderConferencePresentations(language) {
-  if (!window.conferencePresentations || conferenceContainers.length === 0) return;
+  if (!window.conferencePresentations) return;
 
-  conferenceContainers.forEach((container) => {
+  document.querySelectorAll("[data-conference-list]").forEach((container) => {
     const presentations = window.conferencePresentations[container.dataset.conferenceList] || [];
     const years = [...new Set(presentations.map((presentation) => presentation.year))].sort((a, b) => b - a);
     container.replaceChildren();
@@ -578,8 +569,6 @@ function renderConferencePresentations(language) {
   });
 }
 
-if (currentYear) currentYear.textContent = new Date().getFullYear();
-
 function setLanguage(language) {
   document.documentElement.lang = language;
   const pageTitles = {
@@ -590,93 +579,118 @@ function setLanguage(language) {
     opportunities: "pageTitleOpportunities",
     contact: "pageTitleContact",
   };
-  const pageTitleKey = pageTitles[document.body.dataset.page] || "pageTitleHome";
-  document.title = translations[language][pageTitleKey];
+  const pageTitleKey = pageTitles[document.body.dataset.page];
+  if (pageTitleKey) document.title = translations[language][pageTitleKey];
 
-  translatableElements.forEach((element) => {
-    const key = element.dataset.i18n;
-    if (translations[language][key]) element.textContent = translations[language][key];
+  document.querySelectorAll("[data-i18n]").forEach((element) => {
+    const text = translations[language][element.dataset.i18n];
+    if (typeof text === "string") element.textContent = text;
   });
+
+  document.querySelector(".desktop-nav").setAttribute("aria-label", language === "ko" ? "주 메뉴" : "Primary navigation");
 
   renderConferencePresentations(language);
 
-  languageButtons.forEach((button) => {
+  document.querySelectorAll("[data-lang]").forEach((button) => {
     const isSelected = button.dataset.lang === language;
     button.classList.toggle("is-selected", isSelected);
     button.setAttribute("aria-pressed", String(isSelected));
   });
+  document.dispatchEvent(new Event("crecs:languagechange"));
+  document.documentElement.removeAttribute("data-language-pending");
+}
 
+const preferenceKey = "crecs-language";
+const regionLanguageKey = "crecs-region-language";
+let visitorSelectedLanguage = false;
+
+function readStoredLanguage(storage, key) {
   try {
-    localStorage.setItem("crecs-language", language);
+    const value = window[storage].getItem(key);
+    return value === "ko" || value === "en" ? value : null;
   } catch {
-    // Keep the language switch functional if storage is unavailable.
+    return null;
   }
 }
 
-languageButtons.forEach((button) => {
-  button.addEventListener("click", () => setLanguage(button.dataset.lang));
-});
-
-menuButton.addEventListener("click", () => {
-  const isOpen = mobileMenu.classList.toggle("is-open");
-  menuButton.setAttribute("aria-expanded", String(isOpen));
-});
-
-mobileMenu.addEventListener("click", (event) => {
-  if (event.target.matches("a")) {
-    mobileMenu.classList.remove("is-open");
-    menuButton.setAttribute("aria-expanded", "false");
+function storeLanguage(storage, key, language) {
+  try {
+    window[storage].setItem(key, language);
+  } catch {
+    // The current page still works when browser storage is unavailable.
   }
-});
+}
 
-function updateActiveNavigation() {
-  const headerHeight = Number.parseFloat(
-    getComputedStyle(document.documentElement).getPropertyValue("--header-height"),
-  );
-  const markerPosition = window.scrollY + headerHeight + 48;
-  let activeSection = pageSections[0];
+function chooseLanguage(language) {
+  visitorSelectedLanguage = true;
+  storeLanguage("localStorage", preferenceKey, language);
+  setLanguage(language);
+}
 
-  pageSections.forEach((section) => {
-    if (section.offsetTop <= markerPosition) activeSection = section;
+async function detectRegionLanguage() {
+  const fallback = /^ko(?:-|$)/i.test(navigator.language) ? "ko" : "en";
+  let detected = fallback;
+  const controller = new AbortController();
+  const timeout = setTimeout(() => controller.abort(), 2500);
+  try {
+    const response = await fetch("https://api.country.is/", {
+      signal: controller.signal,
+      credentials: "omit",
+      referrerPolicy: "no-referrer",
+      cache: "no-store",
+    });
+    if (response.ok) {
+      const { country } = await response.json();
+      if (typeof country === "string" && /^[A-Z]{2}$/.test(country) && country !== "XX" && country !== "ZZ") {
+        detected = country === "KR" ? "ko" : "en";
+      }
+    }
+  } catch {
+    // Keep the browser-language fallback for this session if lookup fails.
+  } finally {
+    clearTimeout(timeout);
+  }
+
+  storeLanguage("sessionStorage", regionLanguageKey, detected);
+  return readStoredLanguage("localStorage", preferenceKey) || detected;
+}
+
+function getInitialLanguage() {
+  const requested = new URLSearchParams(location.search).get("lang");
+  if (requested === "ko" || requested === "en") {
+    storeLanguage("localStorage", preferenceKey, requested);
+    return requested;
+  }
+  return readStoredLanguage("localStorage", preferenceKey)
+    || readStoredLanguage("sessionStorage", regionLanguageKey)
+    || detectRegionLanguage();
+}
+
+// Start resolving the language while the browser is still parsing the page.
+const initialLanguage = getInitialLanguage();
+if (typeof initialLanguage === "string") document.documentElement.lang = initialLanguage;
+document.documentElement.setAttribute("data-language-pending", "");
+
+document.addEventListener("DOMContentLoaded", async () => {
+  const currentYear = document.querySelector("[data-current-year]");
+  if (currentYear) currentYear.textContent = new Date().getFullYear();
+  document.querySelectorAll("[data-lang]").forEach((button) => {
+    button.addEventListener("click", () => chooseLanguage(button.dataset.lang));
   });
 
-  if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2) {
-    activeSection = pageSections.at(-1);
-  }
-
-  sectionNavigationLinks.forEach((link) => {
-    const isActive = link.dataset.section === activeSection.id;
-    link.classList.toggle("is-active", isActive);
-    if (isActive) {
-      link.setAttribute("aria-current", "location");
-    } else {
-      link.removeAttribute("aria-current");
+  const menuButton = document.querySelector(".menu-button");
+  const mobileMenu = document.querySelector(".mobile-nav");
+  menuButton.addEventListener("click", () => {
+    const isOpen = mobileMenu.classList.toggle("is-open");
+    menuButton.setAttribute("aria-expanded", String(isOpen));
+  });
+  mobileMenu.addEventListener("click", (event) => {
+    if (event.target.matches("a")) {
+      mobileMenu.classList.remove("is-open");
+      menuButton.setAttribute("aria-expanded", "false");
     }
   });
-}
 
-let navigationUpdateFrame;
-
-function requestNavigationUpdate() {
-  if (navigationUpdateFrame) return;
-  navigationUpdateFrame = window.requestAnimationFrame(() => {
-    updateActiveNavigation();
-    navigationUpdateFrame = undefined;
-  });
-}
-
-if (pageSections.length > 0) {
-  window.addEventListener("scroll", requestNavigationUpdate, { passive: true });
-  window.addEventListener("resize", requestNavigationUpdate);
-  updateActiveNavigation();
-}
-
-let initialLanguage = new URLSearchParams(window.location.search).get("lang");
-if (!["ko", "en"].includes(initialLanguage)) {
-  try {
-    initialLanguage = localStorage.getItem("crecs-language") || "en";
-  } catch {
-    initialLanguage = "en";
-  }
-}
-setLanguage(initialLanguage === "ko" ? "ko" : "en");
+  const language = await initialLanguage;
+  if (!visitorSelectedLanguage) setLanguage(language);
+});

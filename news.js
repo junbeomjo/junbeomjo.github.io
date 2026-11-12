@@ -1,21 +1,17 @@
 /* Bilingual news content and rendering. Add future stories to the array below. */
 (() => {
-  const requestedLanguage = new URLSearchParams(location.search).get("lang");
-  if (["ko", "en"].includes(requestedLanguage)) {
-    try { localStorage.setItem("crecs-language", requestedLanguage); } catch { /* Language switching also works without storage. */ }
-  }
   const copy = {
     ko: {
-      nav: "소식", kicker: "LATEST FROM CReCS", heading: "최근 소식", all: "전체 소식 보기",
+      kicker: "LATEST FROM CReCS", heading: "최근 소식", all: "전체 소식 보기",
       read: "자세히 보기",
-      archiveKicker: "NEWS & UPDATES", archiveTitle: "연구실 소식",
+      archiveKicker: "소식", archiveTitle: "연구실 소식",
       archiveIntro: "학회 발표, 현장 조사와 연구실의 새로운 이야기를 전합니다.",
       archiveCount: "전체 소식", back: "소식 목록으로", related: "다른 소식", home: "홈으로",
     },
     en: {
-      nav: "News", kicker: "LATEST FROM CReCS", heading: "Latest news", all: "View all news",
+      kicker: "LATEST FROM CReCS", heading: "Latest news", all: "View all news",
       read: "Read story",
-      archiveKicker: "NEWS & UPDATES", archiveTitle: "News from CReCS",
+      archiveKicker: "News", archiveTitle: "News from CReCS",
       archiveIntro: "Conferences, fieldwork, and everyday discoveries from our lab.",
       archiveCount: "All stories", back: "Back to news", related: "More from the lab", home: "Back to home",
     },
@@ -42,26 +38,6 @@
   stories.sort((a, b) => b.date.localeCompare(a.date));
 
   const isHome = document.body.dataset.page === "home";
-  document.querySelectorAll(".desktop-nav, .mobile-nav").forEach((nav) => {
-    const link = document.createElement("a");
-    link.href = "news.html";
-    link.dataset.newsI18n = "nav";
-    link.textContent = "News";
-    if (isHome) link.dataset.section = "news";
-    if (document.body.dataset.page === "news") {
-      link.className = "is-active";
-      link.setAttribute("aria-current", "page");
-    }
-    const publicationsLink = nav.querySelector('[data-i18n="navPublications"]');
-    if (publicationsLink) publicationsLink.after(link);
-  });
-  const footerNav = document.querySelector('.site-footer nav[aria-label="Footer navigation"]');
-  if (footerNav) {
-    const link = document.createElement("a");
-    link.href = "news.html";
-    link.dataset.newsI18n = "nav";
-    footerNav.append(link);
-  }
 
   function card(story, lang) {
     const text = story[lang];
@@ -106,6 +82,6 @@
       ${relatedStories.length ? `<div class="news-more-heading"><h2>${strings.related}</h2></div><div class="news-grid news-grid-related">${relatedStories.map((item) => card(item, lang)).join("")}</div>` : ""}
     </div>`;
   }
-  new MutationObserver(render).observe(document.documentElement, {attributes: true, attributeFilter: ["lang"]});
-  render();
+  document.addEventListener("crecs:languagechange", render);
+  if (!document.documentElement.hasAttribute("data-language-pending")) render();
 })();

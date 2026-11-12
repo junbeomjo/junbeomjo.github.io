@@ -1,11 +1,6 @@
 /* Research page with language-specific figures preserved from the supplied slides. */
 (() => {
   const assets = "assets/research/";
-  let initialLanguage = new URLSearchParams(location.search).get("lang");
-  if (!["ko", "en"].includes(initialLanguage)) {
-    try { initialLanguage = localStorage.getItem("crecs-language"); } catch { /* Use English when storage is unavailable. */ }
-  }
-  document.documentElement.lang = initialLanguage === "ko" ? "ko" : "en";
   const themes = [
     {
       id: "compound-flooding", image: "compound-inundation.webp",
@@ -37,7 +32,7 @@
       ko: {
         title: "폭풍해일 확률분석", short: "폭풍해일 확률분석",
         summary: "장기간 수치모의와 통계분석으로 드문 극한 폭풍해일의 규모와 발생확률을 추정합니다.",
-        lead: "드물지만 큰 폭풍해일의 규모 추정",
+        lead: "극한 폭풍해일의 규모 추정",
         description: "장기간의 수치모의 자료를 통계적으로 분석하여 한반도와 주변 해역의 극한 폭풍해일 높이를 추정합니다. 지역별 특성과 재현기간별 해일 규모를 비교하고 연안 방재계획에 필요한 기초자료를 마련합니다.",
         points: ["장기간 수치모의 자료의 극치 통계분석", "재현기간별 폭풍해일 높이와 지역별 특성 비교", "태풍 조건과 해안 지형에 따른 해일 반응 분석"],
         tags: ["극치분석", "재현기간", "연안 방재"],
@@ -62,12 +57,12 @@
     {
       id: "climate-impacts", image: "climate-tide-flood.webp",
       ko: {
-        title: "기후변화에 따른 침수영향", short: "기후변화 침수영향",
+        title: "기후변화에 따른 침수영향", short: "기후변화와 연안 침수",
         summary: "태풍강도·해수면 상승·조석 조건의 변화가 침수 범위와 깊이에 미치는 영향을 분석합니다.",
         lead: "기후변화 요인별 침수영향 비교",
         description: "태풍강도, 해수면 상승, 높은 조위를 단계적으로 반영하여 각 요인이 침수에 미치는 영향을 분석합니다. 여러 조건이 함께 작용할 때 수위와 침수 범위·깊이가 어떻게 달라지는지 비교합니다.",
         points: ["현재 기후와 온난화 조건의 침수 비교", "해수면 상승과 천문조위의 추가 영향 분석", "방재시설 보강과 적응대책 검토를 위한 기초자료 제공"],
-        tags: ["태풍강도", "해수면 상승", "기후적응"],
+        tags: ["태풍 강도", "해수면 상승", "기후적응"],
         captions: ["도쿄만 사례의 조건별 최대 수위와 육지 침수심 비교. +4°C는 이 사례에서 사용한 온난화 시나리오입니다."],
         scenarios: ["현재 조건", "+4°C 미래", "+ 해수면 상승", "+ 천문조위"], rows: ["최대 수위 (m)", "육지 침수심 (m)"], swipe: "좌우로 넘겨 네 가지 조건을 비교해 보세요 →",
       },
@@ -91,7 +86,7 @@
         title: "연안재해 위험평가", short: "연안재해 위험평가",
         summary: "태풍과 폭풍해일이 도시침수와 경제적 피해로 이어지는 과정을 평가합니다.",
         lead: "태풍에서 도시의 경제적 피해까지",
-        description: "태풍강도의 변화가 폭풍해일과 침수에 미치는 영향을 분석하고, 침수된 건물과 자산의 경제적 피해를 평가합니다. 수위와 침수가 임계 수준을 넘을 때 피해가 급격히 커질 수 있는 비선형적 확대 과정에 주목합니다.",
+        description: "태풍 강도 변화가 폭풍해일과 침수에 미치는 영향을 분석하고, 침수로 인한 건물과 자산의 경제적 피해를 평가합니다.\n특히 수위와 침수 깊이가 임계 수준을 넘을 때 피해가 급격히 커지는 비선형적 관계를 살펴봅니다.",
         points: ["태풍·폭풍해일·침수·경제피해의 연계 분석", "침수 범위와 깊이를 이용한 자산 피해 평가", "피해 확대 과정을 고려한 연안 위험관리 근거 제공"],
         tags: ["연쇄 영향", "경제적 손실", "위험관리"],
         captions: ["태풍강도 변화가 폭풍해일, 도시침수, 경제적 피해로 이어지는 과정"],
@@ -119,17 +114,17 @@
   ];
   const copy = {
     ko: {
-      title: "연구 분야", intro: "복합침수의 발생 과정부터 극한 폭풍해일의 확률, 기후변화의 영향과 경제적 피해까지 네 가지 주제를 연결해 연구합니다.",
+      kicker: "연구 분야", title: "연구 분야", intro: "복합침수의 발생 과정부터 극한 폭풍해일의 확률, 기후변화의 영향과 경제적 피해까지 네 가지 주제를 연결해 연구합니다.",
       read: "자세히 보기", all: "연구 분야 자세히 보기", related: "관련 논문", review: "심사 중", explore: "전체 연구성과 보기",
-      methodsKicker: "OUR APPROACH", methodsTitle: "네 가지 주제를 연결하는 연구 방법",
+      methodsKicker: "OUR APPROACH", methodsTitle: "연구 방법",
       methods: [
         ["수치모델링", "연안과 도시의 물리 과정을 모형으로 재현하고, 여러 재해 요인의 상호작용을 분석합니다."],
         ["수리실험과 검증", "흐름과 배수 현상을 수리실험으로 살펴보고, 관측·실험 자료와 계산 결과를 비교합니다."],
-        ["통계분석과 위험평가", "극한현상의 발생확률과 자산 피해를 분석하여 방재계획과 기후적응에 필요한 근거를 마련합니다."],
+        ["통계 분석과 위험 평가", "극한현상의 발생 확률과 자산 피해를 분석해 방재계획과 기후적응에 필요한 근거를 마련합니다."],
       ],
     },
     en: {
-      title: "Our research", intro: "We connect four research themes: compound flood processes, extreme surge probabilities, climate change impacts, and economic losses.",
+      kicker: "Our Research", title: "Our research", intro: "We connect four research themes: compound flood processes, extreme surge probabilities, climate change impacts, and economic losses.",
       read: "Explore theme", all: "Explore our research", related: "Related publications", review: "Under review", explore: "View all publications",
       methodsKicker: "OUR APPROACH", methodsTitle: "Methods connecting our research",
       methods: [
@@ -174,6 +169,6 @@
       container.innerHTML = ui.methods.map(([title, text], i) => `<article><span>0${i + 1}</span><h3>${escape(title)}</h3><p>${escape(text)}</p></article>`).join("");
     });
   }
-  new MutationObserver(render).observe(document.documentElement, {attributes: true, attributeFilter: ["lang"]});
-  render();
+  document.addEventListener("crecs:languagechange", render);
+  if (!document.documentElement.hasAttribute("data-language-pending")) render();
 })();
