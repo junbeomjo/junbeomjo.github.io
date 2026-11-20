@@ -107,7 +107,7 @@
         graphTitle: "Losses can increase nonlinearly", graphNote: "Conceptual illustration · not a simulation result", xAxis: "Increasing typhoon intensity", yAxis: "Relative impact", legend: ["Surge height", "Flood extent", "Economic losses"],
       },
       papers: [
-        {title: "Cascading amplification of coastal flooding characteristics from typhoon intensity to economic losses in Tokyo Bay", meta: "Coastal Engineering Journal · 2026", href: "publications.html#under-review", underReview: true},
+        {title: "Cascading amplification from typhoon-intensity perturbations to potential surge-induced residential damage in Tokyo Bay", meta: "International Journal of Disaster Risk Reduction · 2026", href: "publications.html#under-review", underReview: true},
         {title: "Analysis of Flood Risk in Ulsan Metropolitan City, South Korea, Considering Urban Development and Changes in Weather Factors", meta: "Water · 2025", href: "https://doi.org/10.3390/w17192800"},
       ],
     },
